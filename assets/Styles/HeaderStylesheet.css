@@ -1,0 +1,78 @@
+/* Style for the navigation menu */
+header{
+    background-color: rgb(48,60,71);
+    position: fixed;
+    width:100%;
+    height: 90px;
+    
+}
+nav{
+    /* width:100%; */
+    background-color: rgb(48,60,71);
+    box-sizing: border-box;
+    float: right;
+    padding-bottom: 0.5em;
+}
+nav ul li{
+    float: left;
+    padding: 0.5em;
+    margin:1.1em;
+    color: white;
+    font-size:1.25em;
+    font-family: Andale Mono, monospace;
+}
+nav ul li:nth-child(4){
+    background-color: orangered;
+    }
+nav ul{
+    padding-bottom: 1em;
+    /* padding-right: 1em; */
+    box-sizing: border-box;
+    /* margin-top: 4em; */
+}
+/* Style for the logo */
+#site_logo_container{
+    float: left;    
+    height: 80px;
+}
+#site_logo_container img{
+    width:12em;
+}
+#menu_extender_icon{
+    display: none;
+    color:white;
+}
+@media only screen and (max-width: 840px) {
+    #menu_extender_icon{
+        float:right;
+        /* position: absolute; */
+        /* margin: auto; */
+        /* left:90%; */
+        /* clear: both; */
+        padding: 1.2em;
+        font-size: 1.5em;
+        display: block;
+    }
+    nav{
+        float: none;
+        width:100%;
+    }
+    .navigation_menu{
+        clear: both;
+        display: none;
+        width: 100%;
+    }
+    .navigation_menu_extended{
+        display: block; 
+    }
+    nav ul li{
+        text-align: center;
+        float: none;
+        display: block;
+    }
+    nav ul li:first-child{
+        margin-top:4em;
+        clear: both;
+    }
+    
+}
