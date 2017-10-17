@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookMe</title>
+    <link rel="icon" href="assets/Images/Images-Icon/title_icon.png"/>
+    <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>
+    <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/>
+    <link rel="stylesheet" href="assets/Styles/MainPage.css"/>
+    <script src="assets/Javascript/basic-functionalities.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>      
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <script src="assets/Routes/myApp.js"></script>
+    <script src="assets/controlers/mainPageControler.js"></script>
+    <script src="assets/Javascript/viewtry.js"></script>
+    
+</head>
+<body ng-app="myApp">
+    <header>
+            <div id='site_logo_container'>
+                <img src="assets/Images/Images-Icon/title_icon.png" alt="Site Logo"/>
+            </div>
+          
+                <nav>
+                    <span id='menu_extender_icon'>☰</span>
+                        <ul class='navigation_menu'>
+                            <li id='main_page'><a href="#/!">Home</a></li>
+                            <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li>
+                            <li id='sign_in_form'>Sign In</li>
+                            <li id='sign_up_form'>Sign Up</li>
+                        </ul>
+        </nav>
+    </header>
+
+
+
+            
+            <div ng-view>
+
+            </div>
+            
+    <main>
+        <section> 
+            
+        </section>    
+    </main>   
+     
+
+    <footer>
+
+    </footer>
+</body>
+</html>

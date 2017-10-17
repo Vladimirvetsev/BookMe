@@ -1,0 +1,597 @@
+[{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0,
+    "reservations":[
+
+    ],
+    "priceForRoom2":30,
+    "priceForRoom3":30,
+    "priceForRoom4":30
+},
+{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "plovdiv",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0,
+    "reservations":[
+
+    ],
+    "priceForRoom2":30,
+    "priceForRoom3":30,
+    "priceForRoom4":30
+},
+{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "plovdiv",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0,
+    "reservations":[
+
+    ],
+    "priceForRoom2":30,
+    "priceForRoom3":30,
+    "priceForRoom4":30
+},
+{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "plovdiv",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0,
+    "reservations":[
+
+    ],
+    "priceForRoom2":30,
+    "priceForRoom3":30,
+    "priceForRoom4":30
+},
+{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "sofia",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+},{
+    "id": 1,
+    "country": "bulgaria",
+    "town": "plovdiv",
+    "location": "moskow str. 23",
+    "type": "hotel",
+    "name": "Hotel Darling",
+    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "hotelStars": 5,
+    "roomsCount": 3,
+    "allRooms": [
+        {
+            "roomID": 1,
+            "type": 2,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        },
+        {
+            "roomID": 2,
+            "type": 3,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area, balkony"
+        },
+        {
+            "roomID": 3,
+            "type": 4,
+            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
+            "roomFacilities": "smoking area"
+        }
+    ],
+    "facilities": [
+        "Free parking",
+        "Free WiFi",
+        "very good spa ",
+        "wellness centre",
+        "Swimming pool",
+        "Airport shuttle",
+        "good fitness centre",
+        "Bar"
+    ],
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "grade": 4,
+    "likes": 0
+}]

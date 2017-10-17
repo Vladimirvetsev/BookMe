@@ -1,0 +1,42 @@
+<section id='main_page_content' ng-controller="hotels">
+
+    <h1>Find hotels from all over the world</h1>
+    
+        <div class="input_search">
+            <span >
+                  <button class="input_btn" ng-click="searchtown=town" >Go!</button>
+                </span>
+                <input type="text" class="form-control" placeholder="" ng-model="town">
+            </div>
+            
+            
+        <!--  -->
+        
+    <div id='allTheHotels' ng-if="searchtown !==''" >
+        
+        <article class='one_hotel' ng-repeat="hotels in myhotels | filter: {town:searchtown}">
+            <img class='hotel_main_image'ng-src="{{hotels.Photos[0]}}" /> 
+            <h2>{{hotels.name}}</h2>
+            <p>{{hotels.shortDescription}}</p>
+            <span >{{hotels.type}}</span><br>
+            <!-- LIKE BUTTON MUST ONLY BE AVAILABLE WHEN USER IS LOGED IN -->
+            <!-- <img src="assets/Images/Images-Icon/like-Button.png" ng-click="hotels.likes=hotel.likes+1" style="width:20px;" alt="">{{hotels.likes}} -->
+            <!-- <span>This hotel has {{hoteles.grade}} stars</span> -->
+            
+        </article>
+    </div>
+        <!-- <article class='one_hotel' ng-repeat="hotels in myhotels | filter: {town:'searchtown'}">
+            <img class='hotel_main_image'ng-src="{{hotels.Photos[0]}}" /> 
+            <h2>{{hotels.name}}</h2>
+            <p>{{hotels.shortDescription}}</p>
+            <span >{{hotels.type}}</span><br>
+            <!-- LIKE BUTTON MUST ONLY BE AVAILABLE WHEN USER IS LOGED IN -->
+            <!-- <img src="assets/Images/Images-Icon/like-Button.png" ng-click="hotels.likes=hotel.likes+1" style="width:20px;" alt="">{{hotels.likes}} -->
+            <!-- <span>This hotel has {{hoteles.grade}} stars</span> -->
+
+        <!-- </article> -->
+
+    <!-- </div> -->
+
+</section>
+<script src="assets/controlers/mainPageControler.js"></script>

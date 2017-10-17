@@ -1,0 +1,107 @@
+/* CONTAINER STYLE */
+#main_page_content{
+    
+    overflow: auto;
+    margin: auto;
+    width:80%;
+    padding-top: 200px;
+    background-color: lightblue;
+    height: max-content;
+}
+#main_page_content>h1{
+    font-size:3em;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    color: rgb(48,60,71);
+    text-align: center;
+}
+
+
+
+/* SEARCH STYLE */
+
+.input_search input{
+    width: 30%;
+    height: 3em;
+    position: absolute;
+    border: 0.15em solid rgba(48,60,71,0.6);
+    border-left: none;
+    border-radius: 0.7em;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+    padding-left:1%; 
+
+}
+.input_search>input:hover{
+    width: 45%;
+    border-radius: 0.7em;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.input_search input:focus{
+    outline: none;
+    border-radius: 0.7em;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.input_search{
+    position: relative;
+    margin-left: 35%;
+    margin-top:7%;
+    margin-bottom: 5%;
+}
+.input_btn{
+    background-color: rgba(48,60,71,0.6);
+    color: white;
+    width:12%;
+    height: 3.45em;
+    border: 0.15em solid rgba(48,60,71,0.1);
+    border-right: none;
+    border-radius: 0.7em;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.input_btn:hover{
+    background-color: rgba(48,60,71,0.5);
+}
+
+/* THE LIST OF THE HOTELS STYLE */
+#allTheHotels{
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    padding: 3em;
+    margin: auto;
+}
+
+.one_hotel{
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border: 0.05em solid lightslategray;
+}
+.one_hotel .hotel_main_image{
+    position: relative;
+    width:300px; 
+    vertical-align: top;
+    margin-right: 1em;
+   float:left;
+
+}
+
+.one_hotel h2{
+    font-size:1.5em;
+    padding-bottom: 0.4em;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    color: rgb(48,60,71);
+    text-align: center;
+}
+.one_hotel p{
+    
+    margin: 1em;
+}  
+
+}
