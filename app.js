@@ -4,15 +4,40 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose')
+var session= require('express-session')
+var _ = require('lodash');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
+
+var mongodb=require('mongodb');
+var monk=require('monk');
+var dbhotels = monk('localhost:27017/hotels');
+var dbusers = monk('localhost:27017/users');
 
 var app = express();
 
+var index = require('./routes/index');
+var hotels = require('./routes/hotels');
+// var viewdetails = require('./routes/viewdetails');
+// var users = require('./routes/users');
+var login = require('./routes/login');
+
+app.use(function(req,resp,next){
+  req.dbusers=dbusers;
+  next();
+})
+
+app.use(function(req,resp,next){
+    req.dbhotels=dbhotels;
+    next();
+  })
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'hbs');
+
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -21,10 +46,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret: 'bookingPassword'}));
 
 app.use('/', index);
-app.use('/users', users);
-app.use('/users', users);
+app.use('/hotels', hotels);
+
+app.use('/login', login);
+// mongoose.connect('mongodb://localhost/' + db);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

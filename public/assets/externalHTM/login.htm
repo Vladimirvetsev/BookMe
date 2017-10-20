@@ -1,0 +1,15 @@
+<section id='login_page_content' ng-controller="loginController">
+    <!-- <fieldset style="padding-top:200px;"> -->
+        <!--  -->
+        <div id='log_in_container'>
+
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <<input type="submit" id='sign_in_btn' value='Sign In'>
+                {{message}}
+            </form>
+        <!-- </fieldset> -->
+    </div>
+</section>
+<script src="assets/controlers/loginController.js"></script>

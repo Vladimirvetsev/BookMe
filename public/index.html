@@ -8,6 +8,8 @@
     <link rel="icon" href="assets/Images/Images-Icon/title_icon.png"/>
     <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>
     <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/>
+    <link rel="stylesheet" href="assets/Styles/LogIn.css"/>
+    <link rel="stylesheet" href="assets/Styles/Register.css"/>
     <link rel="stylesheet" href="assets/Styles/MainPage.css"/>
     <script src="assets/Javascript/basic-functionalities.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -16,6 +18,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
     <script src="assets/Routes/myApp.js"></script>
     <script src="assets/controlers/mainPageControler.js"></script>
+    <script src="assets/controlers/loginController.js"></script>
+    <script src="assets/controlers/registerController.js"></script>
+    <script src="assets/controlers/viewDetailsController.js"></script>
     <script src="assets/Javascript/viewtry.js"></script>
     
 </head>
@@ -30,8 +35,9 @@
                         <ul class='navigation_menu'>
                             <li id='main_page'><a href="#/!">Home</a></li>
                             <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li>
-                            <li id='sign_in_form'>Sign In</li>
-                            <li id='sign_up_form'>Sign Up</li>
+                            <li id='organise_trip_page'><a href="#!thirdPage">Organise trip</a></li>
+                            <li id='sign_in_form'><a href="#!login">Sign In</a></li>
+                            <li id='sign_up_form'><a href="#!registerPage">Sign In</a></li>
                         </ul>
         </nav>
     </header>
@@ -39,14 +45,12 @@
 
 
             
+    <main>
             <div ng-view>
 
             </div>
             
-    <main>
-        <section> 
-            
-        </section>    
+         
     </main>   
      
 

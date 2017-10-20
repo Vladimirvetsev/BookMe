@@ -1,42 +1,41 @@
-<section id='main_page_content' ng-controller="hotels">
+<section id='main_page_content' ng-controller="mainPageController">
 
     <h1>Find hotels from all over the world</h1>
     
         <div class="input_search">
             <span >
-                  <button class="input_btn" ng-click="searchtown=town" >Go!</button>
+                  <button class="input_btn" ng-click="searchtown=town"  >Go!</button>
                 </span>
-                <input type="text" class="form-control" placeholder="" ng-model="town">
+                <input type="text" class="form-control" placeholder="Search for town..." ng-model="town">
             </div>
-            
-            
-        <!--  -->
+         
         
-    <div id='allTheHotels' ng-if="searchtown !==''" >
+    <div id='allTheHotels' >
         
-        <article class='one_hotel' ng-repeat="hotels in myhotels | filter: {town:searchtown}">
-            <img class='hotel_main_image'ng-src="{{hotels.Photos[0]}}" /> 
+        <article class='one_hotel'  ng-show="searchtown===town" ng-repeat="hotels in myhotels | filter: {town:searchtown}">
+            <img class='hotel_main_image'ng-src="{{hotels.img}}" /> 
             <h2>{{hotels.name}}</h2>
-            <p>{{hotels.shortDescription}}</p>
-            <span >{{hotels.type}}</span><br>
+            <h2>{{hotels._id}}</h2>
+            <!-- <p>{{hotels.shortDescription}}</p> -->
+            <!-- <span >{{hotels.type}}</span><br> -->
             <!-- LIKE BUTTON MUST ONLY BE AVAILABLE WHEN USER IS LOGED IN -->
-            <!-- <img src="assets/Images/Images-Icon/like-Button.png" ng-click="hotels.likes=hotel.likes+1" style="width:20px;" alt="">{{hotels.likes}} -->
+            <img src="assets/Images/Images-Icon/like-Button.png" ng-click="hotels.likes=hotel.likes+1" style="width:20px;" alt="">{{hotels.likes}}
+            <button><a href="#!/viewdetails/{{hotels._id}}">view</a></button>
             <!-- <span>This hotel has {{hoteles.grade}} stars</span> -->
             
         </article>
-    </div>
-        <!-- <article class='one_hotel' ng-repeat="hotels in myhotels | filter: {town:'searchtown'}">
-            <img class='hotel_main_image'ng-src="{{hotels.Photos[0]}}" /> 
-            <h2>{{hotels.name}}</h2>
-            <p>{{hotels.shortDescription}}</p>
-            <span >{{hotels.type}}</span><br>
-            <!-- LIKE BUTTON MUST ONLY BE AVAILABLE WHEN USER IS LOGED IN -->
-            <!-- <img src="assets/Images/Images-Icon/like-Button.png" ng-click="hotels.likes=hotel.likes+1" style="width:20px;" alt="">{{hotels.likes}} -->
-            <!-- <span>This hotel has {{hoteles.grade}} stars</span> -->
-
-        <!-- </article> -->
-
-    <!-- </div> -->
+        <!-- <script type="text/ng-template" id="add_order.html">
+            <h2> Add Order </h2>
+            {{message}}
+        </script> -->
+        <!-- <div ng-controller="viewDetailsController">
+            <h1 style="font-size:120px;">
+                {{hotel.name}}
+                </h1>
+     </div> -->
+     
+     <!-- <script src="assets/controlers/viewDetail.js"></script> -->
+     
 
 </section>
 <script src="assets/controlers/mainPageControler.js"></script>

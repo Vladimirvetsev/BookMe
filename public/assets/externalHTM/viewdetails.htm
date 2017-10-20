@@ -1,0 +1,12 @@
+<section style="padding-top:10%;width:500px; height:500px; " ng-controller="viewDetailsController">
+    <input type="text" name="" ng-model="town" >
+    <!-- {{town}} -->
+    <!-- {{hotel}} -->
+    <div ng-repeat="x in myhotels |filter:{_id:thishotel}">
+        {{thishotel}}
+        <h1 style="font-size:20px; color:black;">{{x.name}}</h1>
+        <h1 style="font-size:20px; color:black;">{{x._id}}</h1>
+    </div>
+</section>
+
+<script src="assets/controlers/viewDetailsController.js"></script>

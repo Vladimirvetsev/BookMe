@@ -1,11 +1,15 @@
-app.controller('hotels', function($scope, $http, $filter) {
+app.controller('mainPageController', function($scope, $http) {
+  
     $http({
         method : "GET",
-        url : "assets/controlers/hotels.json"
+        url : "hotels"
     }).then(function mySuccess(response) {
         $scope.myhotels = response.data;
+        // console.log('sfkoajfpjawofpjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj');
     }, function myError(response) {
         $scope.myhotel = response.statusText;
     });
-  
+    
+   
+   $scope.town='';
 });
