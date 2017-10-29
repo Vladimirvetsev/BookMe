@@ -36,7 +36,7 @@
 
 }
 .input_search>input:hover{
-    width: 45%;
+    width: 35%;
     border-radius: 0.7em;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -48,15 +48,17 @@
     border-bottom-left-radius: 0px;
 }
 .input_search{
-    position: relative;
-    margin-left: 35%;
+    /* position: relative; */
+    width:50%;
+    /* margin-left: 35%; */
+    margin:auto;
     margin-top:7%;
     margin-bottom: 5%;
 }
 .input_btn{
     background-color: rgba(48,60,71,0.6);
     color: white;
-    width:12%;
+    width:20%;
     height: 3.45em;
     border: 0.15em solid rgba(48,60,71,0.1);
     border-right: none;
