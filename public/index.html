@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BookMe</title>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
     <link rel="icon" href="assets/Images/Images-Icon/title_icon.png"/>
-    <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>
-    <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/>
+    <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/> old header -->
+    <link rel="stylesheet" href="assets/Styles/Header.css"/> <!-- new header -->
+    <!-- <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/> -->
     <link rel="stylesheet" href="assets/Styles/LogIn.css"/>
     <link rel="stylesheet" href="assets/Styles/Register.css"/>
     <link rel="stylesheet" href="assets/Styles/MainPage.css"/>
+    <link rel="stylesheet" href="assets/Styles/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/Styles/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="assets/Javascript/bootstrap.min.js"></script>
     <script src="assets/Javascript/basic-functionalities.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
@@ -22,10 +28,12 @@
     <script src="assets/controlers/registerController.js"></script>
     <script src="assets/controlers/viewDetailsController.js"></script>
     <script src="assets/Javascript/viewtry.js"></script>
+    <script src="assets/Javascript/userController.js"></script>
+    <script src="assets/Javascript/userService.js"></script>
     
 </head>
 <body ng-app="myApp">
-    <header>
+    <!-- <header>
             <div id='site_logo_container'>
                 <img src="assets/Images/Images-Icon/title_icon.png" alt="Site Logo"/>
             </div>
@@ -36,11 +44,88 @@
                             <li id='main_page'><a href="#/!">Home</a></li>
                             <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li>
                             <li id='organise_trip_page'><a href="#!thirdPage">Organise trip</a></li>
-                            <li id='sign_in_form'><a href="#!login">Sign In</a></li>
+                            <li id='sign_in_form'><a href="/login">Sign In</a></li>
                             <li id='sign_up_form'><a href="#!registerPage">Sign In</a></li>
                         </ul>
         </nav>
-    </header>
+    </header> -->
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#!/">BookMe</a>
+          </div>
+    
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li id='main_page'>
+                <a href="#!mainPage">Main page</a>
+              </li>
+              <li id='organise_trip_page'>
+                <a href="#!secondPage">Organise trip</a>
+              </li>
+              <li id="third_page">
+                <a href="#!thirdPage">Third page</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li id="login" class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                  <b>Login</b>
+                  <span class="caret"></span>
+                </a>
+                <ul id="login-dp" class="dropdown-menu">
+                  <li>
+                    <div class="row">
+                      <div class="col-md-12">
+                        Login via
+                        <div class="social-buttons">
+                          <a href="#" class="btn btn-fb">
+                            <i class="fa fa-facebook"></i> Facebook</a>
+                          <a href="#" class="btn btn-tw">
+                            <i class="fa fa-twitter"></i> Twitter</a>
+                        </div>
+                        or
+                        <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                            <div class="help-block text-right">
+                              <a href="">Forget the password ?</a>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="bottom text-center">
+                        New here ?
+                        <a href="#">
+                          <b>Join Us</b>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
 
 
 

@@ -51,7 +51,7 @@ app.use(session({secret: 'bookingPassword'}));
 app.use('/', index);
 app.use('/hotels', hotels);
 
-app.use('/login', login);
+app.use('/#!login', login);
 // mongoose.connect('mongodb://localhost/' + db);
 
 // catch 404 and forward to error handler

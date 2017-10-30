@@ -6,14 +6,18 @@ var router = express.Router();
 //   res.render('login', { title: 'Express' });
 // });
 router.get('/', function (req, res, next) {
-  var usercollections = req.dbusers.get('users');
-  usercollections.find({})
-      .then(function (datausers) {
-          res.json(datausers);
-          console.log(datausers);
-      }).catch(function (err) {
-          res.json(500, err);
-      });
+  var usercollections = req.dbusers.get('userCollection');
+  usercollections.find({}, {}, function(err,docs) {
+      console.log("asd")
+      res.json({docs})
+      
+  })
+    //   .then(function (datausers) {
+    //       res.json(datausers);
+    //       console.log(datausers);
+    //   }).catch(function (err) {
+    //       res.json(500, err);
+    //   });
 });
 
 // router.post('/', function(req,res,next){
