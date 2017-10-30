@@ -1,0 +1,132 @@
+/* .set_own_hotel{ */
+    /* position: absolute; */
+    /* width: 80%; */
+    /* margin-top: 50px; */
+    /* margin-left: 30%; */
+    /* margin: auto; */
+/* } */
+/* body{ */
+    /* background-color: black; */
+/* } */
+h2{
+    padding-top: 4.5em;
+    /* position: absolute; */
+    text-align: center;
+    /* margin: auto; */
+    /* display: inline-block; */
+    padding-bottom: 0.7em;
+    font-size: 30px;;
+    border-bottom: 1px solid black;
+}
+#get_started{
+     position: relative;
+   /* left: 40%; */
+   height: 50px;
+   width: 200px;
+    /* margin: auto; */
+    top: 11em;
+    /* left: 70%; */
+    display: block;
+}
+hr{
+    border-left: 1px solid rgb(1, 1, 1);
+    border-right: medium none;
+    border-width: medium medium medium 2px;
+    border-style: none none none solid;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color rgb(1, 2116, 2116)
+  }
+.sign_hotel_step{    
+    /* background-color: lightblue; */
+    /* clear: both; */
+    /* float: left; */
+    /* display: inline-block; */
+    
+    
+}
+#steps{
+    /* position: absolute; */
+    margin:0 auto; 
+    max-width: 1032px;
+    /* background-color: lightblue; */
+    /* clear: both; */
+}
+.step_num{
+    float: left;
+    font-size: 108px ;
+    line-height: 90px ;
+    margin-top: 40px ;
+    font-weight: 700 ;
+    color: #101010 ;
+    opacity: 0.8    ;
+    padding-right: 0.4em;
+    letter-spacing: -1.22px ;
+}
+.step_description{
+    /* float: right; */
+    /* max-width: 400px; */
+    max-width: 400px !important;
+    padding-top: 40px !important;
+    display: inline-block !important;
+    padding-right: 0.6em;
+    position: relative !important;
+}
+.step_description:nth-child(even){
+    float: left;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 19px !important;
+    line-height: 24px !important;
+    letter-spacing: undefined !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: #484848 !important;
+    font-weight: 300 !important;
+}
+.step_img1{
+    background-image: url("../Images/Images-JPG/step1.jpeg");
+    background-size: 350px auto !important;
+    background-repeat: no-repeat;
+    width: 350px !important;
+    height: 350px !important;
+    display: inline-block;
+    
+}
+.step_img2{
+    background-image: url("../Images/Images-JPG/step2.jpeg");
+    background-size: 350px auto !important;
+    background-repeat: no-repeat;
+    width: 350px !important;
+    height: 350px !important;
+    display: inline-block;
+}
+.step_img3{
+    background-image: url("../Images/Images-JPG/step3.jpeg");
+    background-size: 350px auto !important;
+    background-repeat: no-repeat;
+    width: 350px !important;
+    height: 350px !important;
+    display: inline-block;
+}
+.Title_description{
+    font-weight: 700 ;
+    padding-bottom: 0.6em;
+    margin: 0px ;
+    word-wrap: break-word;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif ;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    color: #484848 ''
+}
+.first_description{
+    padding-bottom: 0.6em;
+    
+}
+.second_description{
+
+    padding-bottom: 0.6em;
+}
+.third_description{
+    padding-bottom: 0.6em;
+
+}
