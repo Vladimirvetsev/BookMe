@@ -1,42 +1,44 @@
 #login_page_content{
-    background-color: rgba(1, 1, 1, 0.6);
-    /* overflow: auto; */
-    /* height: 2200px; */
-    /* opacity:0.9; */
-    z-index: 1;
-    overflow: hidden;
-    /* position: fixed; */
+    /* background-color: lightblue; */
     width: 100%;
+    padding-top: 15em;
+    height: 500px;
+}
+#log_reg_forms{
+    width: 60%;
+    height: 400px;
+    /* background-color: lightgreen; */
+    margin: auto;
+}
+#log_reg_but{
+width: 70%;
+margin: auto;    
+/* display: block; */
+height: 200px;
+/* background-color: lightblue; */
+    border: 1px solid black;
 }
 
-#log_in_container{
-    box-sizing: border-box;
-    width:30%;
-    margin:auto;
-    height: 500px;
-    margin-top:15%;
-    margin-bottom:15%;
-    background-color: white;
-}
-#log_in_container input{
-    display: block;
-    padding: 1em;
-    margin: 1em;
-    margin-left: 35%; 
-}
-#log_in_container form{
-    padding-top:15%; 
-}
-#sign_in_btn{
-    margin-left: 40%;
-    padding: 1em;
-    width: 25%;
-    /* margin: auto; */
-    box-shadow: none;
+#log_reg_but ul li{
+    /* display: inline-block; */
+    /* margin-left: 10%; */
+    float: left;
+    /* position: absolute; */
+    padding-left:6em;
+    padding-right:6em;
+    text-align: center; 
+    padding-top: 0.8em;
+    font-size:1.25em;
     border: none;
-    height: 3.45em;
-    background-color: rgb(48,60,71);
-    color: white;
-    font-size:0.8em;
-    font-family: Andale Mono, monospace;
+    border-top: 1px solid rgba(48,60,71,0.6);
+    background-color: white;
+    border-bottom: 0.5em solid  rgb(48,60,71);
+    font-family: Andale Mono, monospace;    
+    padding-bottom: 0.2em;
+}
+/* #log_reg_but ul button:first-child{
+    margin-left: 20%;
+} */
+#log_reg_forms{
+    clear: right;
 }
