@@ -21,6 +21,22 @@ app.config(function ($routeProvider) {
         {
             templateUrl: 'assets/externalHTM/viewdetails.htm',
         })
+        // .when('/steps/firstStep',
+        // {
+        //     templateUrl: 'assets/externalHTM/firstStep.htm',
+        // })
+        .when('/secondPage/steps',
+        {
+            templateUrl: 'assets/externalHTM/steps.htm',
+        })
+        .when('/steps/secondStep',
+        {
+            templateUrl: 'assets/externalHTM/secondStep.htm',
+        })
+        .when('/steps/thirdStep',
+        {
+            templateUrl: 'assets/externalHTM/thirdStep.htm',
+        })
     // otherwise({
     //     redirectTo:'mainPage'
     // })

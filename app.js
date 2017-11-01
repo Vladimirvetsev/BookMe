@@ -4,15 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose')
+// var mongoose = require('mongoose')
 var session= require('express-session')
 var _ = require('lodash');
 
 
 var mongodb=require('mongodb');
 var monk=require('monk');
-var dbhotels = monk('localhost:27017/hotels');
-var dbusers = monk('localhost:27017/users');
+var db = monk('localhost:27017/bookMe_data_base');
 
 var app = express();
 
@@ -22,19 +21,19 @@ var hotels = require('./routes/hotels');
 // var users = require('./routes/users');
 var login = require('./routes/login');
 
-app.use(function(req,resp,next){
-  req.dbusers=dbusers;
-  next();
-})
+// app.use(function(req,resp,next){
+//   req.dbusers=dbusers;
+//   next();
+// })
 
 app.use(function(req,resp,next){
-    req.dbhotels=dbhotels;
+    req.db=db;
     next();
   })
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
+// app.set('views', path.join(__dirname, 'views'));
+// app.set('view engine', 'hbs');
 
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');

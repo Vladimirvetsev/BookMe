@@ -8,15 +8,23 @@
 /* body{ */
     /* background-color: black; */
 /* } */
-h2{
-    padding-top: 4.5em;
+#getting_started_title{
+    padding-top: 2.5em;
     /* position: absolute; */
     text-align: center;
     /* margin: auto; */
     /* display: inline-block; */
-    padding-bottom: 0.7em;
-    font-size: 30px;;
-    border-bottom: 1px solid black;
+    padding-bottom: 1.2em;
+    font-weight: 700;
+    font-size: 50px;
+    /* font-family: 700; */
+}
+.start_listing{
+    position: absolute;
+    width:10%;
+    top:100px;
+    left: 80%;
+    background-color: white;
 }
 #get_started{
      position: relative;

@@ -1,0 +1,202 @@
+<section id='step_counter' style='padding:100px;'>
+    <div class="container">
+        <h1>Let's get started!</h1>
+        <ul class="progressbar">
+            <li class="active">Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ul>
+    </div>
+</section>
+<section id='first_step' ng-controller="stepController">
+
+    <form action="">
+
+        <div class='step_heading'>
+            <h2>What kind of place are you listing?</h2>
+        </div>
+        <div class="hotel_type">
+            <span>Hotel, house, apartament or something else.</span>
+        </div>
+        <div class='hotel_input'>
+
+            <select name="type" id="" ng-model="hotelData.hotelType">
+                <option value="hotel">Hotel</option>
+                <option value="house">House</option>
+                <option value="apartament">Apartament</option>
+                <option value="something_else">Something else</option>
+            </select>
+        </div>
+        <div class="hotel_type">
+            <span>With how many stars?</span>
+        </div>
+        <div class='hotel_input'>
+            <select name="stars" id="" ng-model="hotelData.stars">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+            </select>
+        </div>
+        <!-- <div class="stars">
+            <input type="radio" name="star" class="star-1" id="star-1" />
+            <label class="star-1" for="star-1">1</label>
+            <input type="radio" name="star" class="star-2" id="star-2" />
+            <label class="star-2" for="star-2">2</label>
+            <input type="radio" name="star" class="star-3" id="star-3" />
+            <label class="star-3" for="star-3">3</label>
+            <input type="radio" name="star" class="star-4" id="star-4" />
+            <label class="star-4" for="star-4">4</label>
+            <input type="radio" name="star" class="star-5" id="star-5" />
+            <label class="star-5" for="star-5">5</label>
+            <span></span>
+        </div> -->
+        <div class="hotel_type">
+            <div></div>
+            <span>What will guest have?</span>
+        </div>
+        <div class='hotel_input'>
+
+            <select name="possetions" id="" ng-model="hotelData.possetions">
+                <option value="whole_place">Whole place</option>
+                <option value="privite_room">Privite room</option>
+                <option value="something_else">Something else</option>
+            </select>
+        </div>
+        <div class="hotel_type">
+            <span>How many rooms does your property have?</span>
+        </div>
+        <div class='hotel_input'>
+            <select name="roomsCount" id="" ng-model="hotelData.roomsCount">
+                <option value="2-5">2-5</option>
+                <option value="6-7">5-7</option>
+                <option value="8-10">8-10</option>
+                <option value="more_than_10">More than 10</option>
+            </select>
+        </div>
+        <!-- </div>
+        <div> -->
+        <div class='step_heading'>
+            <h2>Okay now! How many beds your property has</h2>
+        </div>
+        <div class="hotel_type">
+            <span>How many  guest?</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="number" ng-model="hotelData.maxGuests">
+        </div>
+        <div class="hotel_type">
+            <span>How many bedrooms you have?</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="number" ng-model="hotelData.bedroomsCount">
+        </div>
+        <div class="hotel_type">
+            <span>And bathrooms?</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="number" ng-model="hotelData.bathroomsCount">
+        </div>
+        <!-- </div> -->
+        <!-- <div> -->
+        <div class='step_heading'>
+            <h2>Where's you place located</h2>
+        </div>
+        <div class="hotel_type">
+            <span>Country</span>
+        </div>
+        <div class='hotel_input'>
+            <select name="country" id="country" ng-model="hotelData.country">
+                <!-- ?<optgroup id="country-optgroup-Europe" label="Europe"> -->
+                    <option value="Albania" label="Albania">Albania</option>
+                    <option value="Andorra" label="Andorra">Andorra</option>
+                    <option value="Austria" label="Austria">Austria</option>
+                    <option value="Belarus" label="Belarus">Belarus</option>
+                    <option value="Belgium" label="Belgium">Belgium</option>
+                    <option value="Bosnia_and_Herzegovina" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Bulgaria" label="Bulgaria">Bulgaria</option>
+                    <option value="Croatia" label="Croatia">Croatia</option>
+                    <!-- </optgroup> -->
+                </select>
+        </div>
+        <div class="hotel_type">
+            <span>Property addres</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="text" ng-model="hotelData.address">
+        </div>
+        <div class="hotel_type">
+            <span>City</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="text" ng-model="hotelData.town">
+        </div>
+        <div class="hotel_type">
+            <span>Post Code</span>
+        </div class="hotel_type">
+        <div class='hotel_input'>
+            <input type="text" ng-model="hotelData.postCode">
+        </div>
+        <!-- </div> -->
+
+        <!-- <div> -->
+        <div class='step_heading'>
+            <h2>You're almost there! Let's see your property facilities</h2>
+        </div>
+
+         <div class='hotel_facilities'>
+            <input type="checkbox" ng-model="hotelData.facilities.wifi"><span>Wifi</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.tv"><span>TV</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.smoke_area"><span>Smoke Area</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.pool"><span>Pool</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.essentials"><span> Essentials</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.closet"><span>Closet/drawers</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.airConditioning"><span>Air conditioning</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.iron"><span>Iron</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.gym"><span>Gym</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.bbq"><span>BBQ</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.pets"><span>Pets</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.hairDryer"><span>Hair dryer</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.spa"><span>SPA</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities.brekfast"><span>Brekfast</span>
+        </div>
+        </div> 
+        <span>Thank you, that's all!</span><button ng-click="addNewHotel($event)">Sign Your Property</button>
+    </form>
+    <p>{{hotelData}}</p>
+    <p>{{facilities}}</p>
+    <!-- <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text"> -->
+</section>
+<script src="assets/controlers/stepController.js"></script>
