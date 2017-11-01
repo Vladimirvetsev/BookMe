@@ -7,18 +7,20 @@
     <title>BookMe</title>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
     <link rel="icon" href="assets/Images/Images-Icon/title_icon.png"/>
-    <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/> old header -->
-    <link rel="stylesheet" href="assets/Styles/Header.css"/> <!-- new header -->
-    <!-- <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/> -->
-    <link rel="stylesheet" href="assets/Styles/Footer.css">
+    <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>  -->
+    <link rel="stylesheet" href="assets/Styles/Header.css"/> <!--new header -->
+    <link rel="stylesheet" href="assets/Styles/Footer.css"/>
+    <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/>
     <link rel="stylesheet" href="assets/Styles/LogIn.css"/>
     <link rel="stylesheet" href="assets/Styles/Register.css"/>
     <link rel="stylesheet" href="assets/Styles/MainPage.css"/>
+    <link rel="stylesheet" href="assets/Styles/stepsPages.css"/>
+    <link rel="stylesheet" href="assets/Styles/AddHotel.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/Javascript/basic-functionalities.js"></script>
+    <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>      
@@ -28,8 +30,10 @@
     <script src="assets/controlers/loginController.js"></script>
     <script src="assets/controlers/registerController.js"></script>
     <script src="assets/controlers/viewDetailsController.js"></script>
-    <script src="assets/Javascript/viewtry.js"></script>
+    <!-- <script src="assets/Javascript/viewtry.js"></script> -->
     <script src="assets/Javascript/userController.js"></script>
+    <script src="assets/controlers/stepController.js"></script>
+    
     <script src="assets/Javascript/userService.js"></script>
     
 </head>
@@ -43,14 +47,16 @@
                     <span id='menu_extender_icon'>☰</span>
                         <ul class='navigation_menu'>
                             <li id='main_page'><a href="#/!">Home</a></li>
-                            <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li> 
+                            <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li>
                             <li id='organise_trip_page'><a href="#!thirdPage">Organise trip</a></li>
                             <li id='sign_in_form'><a href="/login">Sign In</a></li>
                             <li id='sign_up_form'><a href="#!registerPage">Sign In</a></li>
                         </ul>
-        </nav>
-    </header> -->
-    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        </nav> 
+    </header >  -->
+    <header style="position:fixed; width:100%; top:0px; ">
+
+      <nav class="navbar navbar-default navbar-inverse"  role="navigation">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -62,7 +68,7 @@
             </button>
             <a class="navbar-brand" href="#!/">BookMe</a>
           </div>
-    
+          
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -123,15 +129,16 @@
               </li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
+    <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+    <!-- /.container-fluid -->
       </nav>
-
-
-
-            
-    <main>
+    </header>
+      
+      
+      
+      
+      <main>
             <div ng-view>
 
             </div>
