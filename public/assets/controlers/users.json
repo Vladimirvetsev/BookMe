@@ -1,0 +1,10 @@
+[{
+    "firstName": "Ivan",
+    "lastName": "Ivanov",
+    "email": "test@abv.bg",
+    "password": "123456",
+    "arrayBookings": [],
+    "arrayVisitedHotels": [],
+    "arrayFavoriteHotels": [],
+    "arrayOwnHotels": []
+}]
