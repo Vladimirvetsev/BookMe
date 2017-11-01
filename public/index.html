@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BookMe</title>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
-    <link rel="icon" href="assets/Images/Images-Icon/title_icon.png"/>
-    <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>  -->
-    <link rel="stylesheet" href="assets/Styles/Header.css"/> <!--new header -->
-    <link rel="stylesheet" href="assets/Styles/Footer.css"/>
-    <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css"/>
-    <link rel="stylesheet" href="assets/Styles/LogIn.css"/>
-    <link rel="stylesheet" href="assets/Styles/Register.css"/>
-    <link rel="stylesheet" href="assets/Styles/MainPage.css"/>
-    <link rel="stylesheet" href="assets/Styles/stepsPages.css"/>
-    <link rel="stylesheet" href="assets/Styles/AddHotel.css"/>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>      
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
-    <script src="assets/Routes/myApp.js"></script>
-    <script src="assets/controlers/mainPageControler.js"></script>
-    <script src="assets/controlers/loginController.js"></script>
-    <script src="assets/controlers/registerController.js"></script>
-    <script src="assets/controlers/viewDetailsController.js"></script>
-    <!-- <script src="assets/Javascript/viewtry.js"></script> -->
-    <script src="assets/Javascript/userController.js"></script>
-    <script src="assets/controlers/stepController.js"></script>
-    
-    <script src="assets/Javascript/userService.js"></script>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BookMe</title>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+  <link rel="icon" href="assets/Images/Images-Icon/title_icon.png" />
+  <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>  -->
+  <link rel="stylesheet" href="assets/Styles/Header.css" />
+  <!--new header -->
+  <link rel="stylesheet" href="assets/Styles/Footer.css" />
+  <link rel="stylesheet" href="assets/Styles/DefaultBrowserSet.css" />
+  <link rel="stylesheet" href="assets/Styles/LogIn.css" />
+  <link rel="stylesheet" href="assets/Styles/Register.css" />
+  <link rel="stylesheet" href="assets/Styles/MainPage.css" />
+  <link rel="stylesheet" href="assets/Styles/stepsPages.css" />
+  <link rel="stylesheet" href="assets/Styles/AddHotel.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+  <script src="assets/Routes/myApp.js"></script>
+  <script src="assets/controlers/mainPageControler.js"></script>
+  <script src="assets/controlers/loginController.js"></script>
+  <script src="assets/controlers/registerController.js"></script>
+  <script src="assets/controlers/viewDetailsController.js"></script>
+  <!-- <script src="assets/Javascript/viewtry.js"></script> -->
+  <script src="assets/Javascript/userController.js"></script>
+  <script src="assets/controlers/stepController.js"></script>
+
+  <script src="assets/Javascript/userService.js"></script>
+
 </head>
+
 <body ng-app="myApp">
-    <!-- <header>
+  <!-- <header>
             <div id='site_logo_container'>
                 <img src="assets/Images/Images-Icon/title_icon.png" alt="Site Logo"/>
             </div>
@@ -54,43 +57,77 @@
                         </ul>
         </nav> 
     </header >  -->
-    <header style="position:fixed; width:100%; top:0px; ">
+  <header style="position:fixed; width:100%; top:0px; ">
 
-      <nav class="navbar navbar-default navbar-inverse"  role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#!/">BookMe</a>
-          </div>
-          
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li id='main_page'>
-                <a href="#!mainPage">Main page</a>
-              </li>
-              <li id='organise_trip_page'>
-                <a href="#!secondPage">Organise trip</a>
-              </li>
-              <li id="third_page">
-                <a href="#!thirdPage">Third page</a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li id="login" class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                  <b>Login</b>
-                  <span class="caret"></span>
-                </a>
-                <ul id="login-dp" class="dropdown-menu">
-                  <li>
-                    <div class="row">
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#!/">BookMe</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li id='main_page'>
+              <a href="#!mainPage">Main page</a>
+            </li>
+            <li id='organise_trip_page'>
+              <a href="#!secondPage">Organise trip</a>
+            </li>
+            <li id="third_page">
+              <a href="#!thirdPage">Third page</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="login" class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                <b>Login</b>
+                <span class="caret"></span>
+              </a>
+              <ul id="login-dp" class="dropdown-menu">
+                <li>
+                  <div class="row">
+                    <div id="regForm" style="display:none">
+                      <div class="col-md-12">
+                        Registration
+                        <br><br>
+                        <form novalidate class="form" role="form" method="PUT" action="/login" accept-charset="UTF-8" id="login-nav">
+                          <div class="form-group">
+                            <label class="sr-only" for="regEmail">First name</label>
+                            <input name="regFName" type="text" class="form-control" id="regFName" placeholder="First name" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="regEmail">Last name</label>
+                            <input name="regLName" type="text" class="form-control" id="regLName" placeholder="Last name" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="regEmail">Email address</label>
+                            <input name="regEmail" type="email" class="form-control" id="regEmail" placeholder="Email address" required>
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="regPassword">Password</label>
+                            <input name="regPassword" type="password" class="form-control" id="regPassword" placeholder="Password" required>
+                          </div>
+                          <div class="form-group">
+                            <button id="regButton" type="submit" class="btn btn-primary btn-block">Register</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="bottom text-center">
+                        Already have an account?
+                        <a href="" id="gotoLogin">
+                          <b>Sign in</b>
+                        </a>
+                      </div>
+                    </div>
+                    <div id="loginForm">
                       <div class="col-md-12">
                         Login via
                         <div class="social-buttons">
@@ -119,146 +156,150 @@
                       </div>
                       <div class="bottom text-center">
                         New here ?
-                        <a href="#">
+                        <span id="gotoReg">
+                        <a href="">
                           <b>Join Us</b>
                         </a>
+                      </span>
                       </div>
                     </div>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-    <!-- /.navbar-collapse -->
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    <!-- /.container-fluid -->
-      </nav>
-    </header>
-      
-      
-      
-      
-      <main>
-            <div ng-view>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
 
-            </div>
-            
-         
-    </main>   
-     
 
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="col-lg-3 col-md-6">
-            <div class="container">
-              <div class="col-lg-3">
-                <div class="footer_intro_hover " style="background-color:#cccccc;">
-                  <p style="text-align:center; margin-top:20px;">
-                    <img src="http://placehold.it/500x330" class="img-responsive" alt="">
-                  </p>
-                  <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
-                      <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                      <a class=" btn btn-default" href="#">
-                        <span class="glyphicon glyphicon-plus"> INFO</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="footer_intro_hover " style="background-color:#cccccc;">
-                  <p style="text-align:center; margin-top:20px;">
-                    <img src="http://placehold.it/500x330" class="img-responsive" alt="">
-                  </p>
-                  <div class="caption">
-                    <div class="blur"></div>
-                    <div class="caption-text">
-                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
-                      <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
-                      <a class=" btn btn-default" href="#">
-                        <span class="glyphicon glyphicon-plus"> INFO</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <h3>Categories:</h3>
-                <ul>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-file"></i> News</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-android"></i> Android</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-code"></i> C#</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-code"></i> Java</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-book"></i> Books</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-globe"></i> Web</a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <i class="fa fa-windows"></i> Windows</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <h3>Contact:</h3>
-                <p>Have a question or feedback? Contact me!</p>
-                <p>
-                  <a href="" title="Contact me!">
-                    <i class="fa fa-envelope"></i> Contact</a>
+
+
+  <main>
+    <div ng-view>
+
+    </div>
+
+
+  </main>
+
+
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="col-lg-3 col-md-6">
+          <div class="container">
+            <div class="col-lg-3">
+              <div class="footer_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="http://placehold.it/500x330" class="img-responsive" alt="">
                 </p>
-                <h3>Follow:</h3>
-                <a href="" id="gh" target="_blank" title="Twitter">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-twitter fa-stack-1x"></i>
-                  </span>
-                  Twitter</a>
-                <a href="" target="_blank" title="Facebook">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                  </span>
-                  Facebook</a>
-                <br/>
-                <a href="" target="_blank" title="GitHub">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x"></i>
-                  </span>
-                  GitHub</a>
-                <a href="" target="_blank" title="Instagram">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-square-o fa-stack-2x"></i>
-                    <i class="fa fa-instagram fa-stack-1x"></i>
-                  </span>
-                  Instagram</a>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+                    <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                    <a class=" btn btn-default" href="#">
+                      <span class="glyphicon glyphicon-plus"> INFO</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <br/>
-              <hr>
-              <p>Copyright © Your Website |
-                <a href="">Privacy Policy</a> |
-                <a href="">Terms of Use</a>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer_intro_hover " style="background-color:#cccccc;">
+                <p style="text-align:center; margin-top:20px;">
+                  <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                </p>
+                <div class="caption">
+                  <div class="blur"></div>
+                  <div class="caption-text">
+                    <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">THIS IS H3</h3>
+                    <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
+                    <a class=" btn btn-default" href="#">
+                      <span class="glyphicon glyphicon-plus"> INFO</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Categories:</h3>
+              <ul>
+                <li>
+                  <a href="">
+                    <i class="fa fa-file"></i> News</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-android"></i> Android</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-code"></i> C#</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-code"></i> Java</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-book"></i> Books</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-globe"></i> Web</a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa fa-windows"></i> Windows</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3>Contact:</h3>
+              <p>Have a question or feedback? Contact me!</p>
+              <p>
+                <a href="" title="Contact me!">
+                  <i class="fa fa-envelope"></i> Contact</a>
               </p>
-    </footer>
+              <h3>Follow:</h3>
+              <a href="" id="gh" target="_blank" title="Twitter">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+                Twitter</a>
+              <a href="" target="_blank" title="Facebook">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+                Facebook</a>
+              <br/>
+              <a href="" target="_blank" title="GitHub">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x"></i>
+                </span>
+                GitHub</a>
+              <a href="" target="_blank" title="Instagram">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-square-o fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x"></i>
+                </span>
+                Instagram</a>
+            </div>
+            <br/>
+            <hr>
+            <p>Copyright © Your Website |
+              <a href="">Privacy Policy</a> |
+              <a href="">Terms of Use</a>
+            </p>
+  </footer>
 </body>
+
 </html>

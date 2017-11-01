@@ -10,4 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault()
         $("#login-dp").toggle()
     })
+
+    document.getElementById("gotoReg").addEventListener("click",function() {
+        document.getElementById("loginForm").style.display = "none"
+        document.getElementById("regForm").style.display = "block"
+    })
+
+    document.getElementById("gotoLogin").addEventListener("click",function() {
+        document.getElementById("loginForm").style.display = "block"
+        document.getElementById("regForm").style.display = "none"
+    })
 })
