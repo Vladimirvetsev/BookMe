@@ -11,9 +11,9 @@ app.config(function ($routeProvider) {
         .when("/thirdPage", {
             templateUrl: 'assets/externalHTM/thirdPage.htm'
         })
-        .when("/login", {
-            templateUrl: 'assets/externalHTM/login.htm'
-        })
+        // .when("/login", {
+        //     templateUrl: 'assets/externalHTM/login.htm'
+        // })
         .when("/registerPage", {
             templateUrl: 'assets/externalHTM/registerPage.htm'
         })

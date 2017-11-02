@@ -23,11 +23,6 @@ var hotels = require('./routes/hotels');
 var login = require('./routes/login');
 
 app.use(function(req,resp,next){
-  req.dbusers=dbusers;
-  next();
-})
-
-app.use(function(req,resp,next){
     req.db=db;
     next();
   })
