@@ -12,7 +12,6 @@ var _ = require('lodash');
 var mongodb=require('mongodb');
 var monk=require('monk');
 var db = monk('localhost:27017/bookMe_data_base');
-var dbusers = monk('localhost:27017/users')
 
 var app = express();
 
