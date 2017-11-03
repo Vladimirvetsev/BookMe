@@ -54,3 +54,9 @@ header {
         border-top:0 none;
     }
 }
+#regButton {
+    height: 34px !important
+}
+#loginButton {
+    height: 34px !important
+}

@@ -13,3 +13,19 @@ function login(user) {
         })
     })
 }
+
+function register(newUser) {
+    return new Promise(function(resolve,reject) {
+        var xhr = new XMLHttpRequest()
+        xhr.open("PUT","http://localhost:3000/login",true)
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(JSON.stringify(newUser));
+        xhr.addEventListener("load",function() {
+            if (xhr.status==200) {
+                resolve(JSON.parse(xhr.responseText))
+            } else {
+                reject(xhr.statusText)
+            }
+        })
+    })
+}
