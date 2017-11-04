@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var originalColor = $(ID).css("background-color")
         $(ID).effect("shake")
         $(ID).css("background-color", "#DB1818")
-        setTimeout(function(){ 
+        setTimeout(function () {
             $(ID).css("background-color", originalColor)
         }, 3000);
     }
@@ -11,12 +11,16 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         var userEmail = document.getElementById("loginEmail").value;
         var userPassword = document.getElementById("loginPassword").value;
-        if ((userEmail.length > 0) && (userPassword.length > 0) && (userEmail.indexOf("@") !=-1) && (userEmail.indexOf("@") !=0) && (userEmail.indexOf("@") != userEmail.length)) {
+        if ((userEmail.length > 0) && (userPassword.length > 0) && (userEmail.indexOf("@") != -1) && (userEmail.indexOf("@") != 0) && (userEmail.indexOf("@") != userEmail.length)) {
             login({ email: userEmail, password: userPassword }).then(function (user) {
-                if (user.length>0) {
+                if (user.length > 0) {
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = user[0].firstName + " " + user[0].lastName
+                    document.getElementById("logout").addEventListener("click", function () {
+                        document.getElementById("userDropdown").style.display = "none"
+                        document.getElementById("login").style.display = "block"
+                    })
                 } else {
                     error("#loginButton")
                 }
@@ -32,18 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
         var regEmail = document.getElementById("regEmail").value
         var regPassword = document.getElementById("regPassword").value
         var originalColor = document.getElementById("regButton").style.backgroundColor
-        if ((regFName.length > 0) && (typeof regFName == "string") && (regLName.length > 0) && (typeof regLName == "string") && (regEmail.length > 0) && (regPassword.length > 0) && (regEmail.indexOf("@") !=-1) && (regEmail.indexOf("@") !=0) && (regEmail.indexOf("@") != regEmail.length)) {
+        if ((regFName.length > 0) && (typeof regFName == "string") && (regLName.length > 0) && (typeof regLName == "string") && (regEmail.length > 0) && (regPassword.length > 0) && (regEmail.indexOf("@") != -1) && (regEmail.indexOf("@") != 0) && (regEmail.indexOf("@") != regEmail.length)) {
             register({ firstName: regFName, lastName: regLName, email: regEmail, password: regPassword }).then(function (res) {
                 if (res.error != null) {
                     alert(res.error)
                     error("#regButton")
                 } else {
-                $("#regButton").css("background-color", "#12CC1B")
-                setTimeout(function(){ 
-                    $("#regButton").css("background-color", originalColor)
-                }, 3000);
-            }
-                })
+                    $("#regButton").css("background-color", "#12CC1B")
+                    setTimeout(function () {
+                        $("#regButton").css("background-color", originalColor)
+                    }, 3000);
+                }
+            })
         } else {
             error("#regButton")
         }
@@ -64,7 +68,25 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("regForm").style.display = "none"
     })
 
-    document.getElementById("logout").addEventListener("click", function () {
-        location.reload()
+    document.getElementById("FBLogin").addEventListener("click", function () {
+        FB.login(function (response) {
+            if (response.status == "connected") {
+                FB.api('/me', function (response) {
+                    alert('Welcome ' + response.name);
+                    document.getElementById("userDropdown").style.display = "block"
+                    document.getElementById("login").style.display = "none"
+                    document.querySelector("#userDropdown >a").textContent = response.name
+                }
+                );
+                document.getElementById("logout").addEventListener("click", function () {
+                    FB.logout(function(response) {
+                     });
+                    document.getElementById("userDropdown").style.display = "none"
+                    document.getElementById("login").style.display = "block"
+                })
+            } else {
+                alert("Problem with logging in")
+            }
+        }, { perms: '' });
     })
 })

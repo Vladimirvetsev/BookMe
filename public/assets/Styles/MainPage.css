@@ -210,6 +210,7 @@ body{
     }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 992px)
 {
     .one_hotel {
@@ -224,3 +225,5 @@ body{
     .allTheHotels {
     width:1170px;
 }
+=======
+>>>>>>> 0fab96e4de1fecbf35219db21bcd5c1259373787

@@ -44,22 +44,27 @@
 </head>
 
 <body ng-app="myApp">
-  <!-- <header>
-            <div id='site_logo_container'>
-                <img src="assets/Images/Images-Icon/title_icon.png" alt="Site Logo"/>
-            </div>
-          
-                <nav>
-                    <span id='menu_extender_icon'>☰</span>
-                        <ul class='navigation_menu'>
-                            <li id='main_page'><a href="#/!">Home</a></li>
-                            <li id='organise_trip_page'><a href="#!secondPage">Organise trip</a></li>
-                            <li id='organise_trip_page'><a href="#!thirdPage">Organise trip</a></li>
-                            <li id='sign_in_form'><a href="/login">Sign In</a></li>
-                            <li id='sign_up_form'><a href="#!registerPage">Sign In</a></li>
-                        </ul>
-        </nav> 
-    </header >  -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '499872677056341',
+        cookie: true,
+        xfbml: true,
+        version: 'v2.10'
+      });
+
+      FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
   <header>
 
     <nav class="navbar navbar-default navbar-inverse" role="navigation">
@@ -89,15 +94,23 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li id="userDropdown" style="display:none" class="dropdown">
-                  <a href="" class="dropdown-toggle" data-toggle="dropdown">User <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Edit profile</a></li>
-                    <li><a href="#">User actions</a></li>
-                    <li class="divider"></li>
-                    <li id="logout"><a href="#">Logout</a></li>
-                  </ul>
+            <li id="userDropdown" style="display:none" class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">User
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">Edit profile</a>
                 </li>
+                <li>
+                  <a href="#">User actions</a>
+                </li>
+                <li class="divider"></li>
+                <li id="logout">
+                  <a href="">Logout</a>
+                </li>
+              </ul>
+            </li>
             <li id="login" class="dropdown">
               <a href="" class="dropdown-toggle" data-toggle="dropdown">
                 <b>Login</b>
@@ -109,7 +122,8 @@
                     <div id="regForm" style="display:none">
                       <div class="col-md-12">
                         Registration
-                        <br><br>
+                        <br>
+                        <br>
                         <form>
                           <div class="form-group">
                             <label class="sr-only" for="regEmail">First name</label>
@@ -128,7 +142,8 @@
                             <input name="regPassword" type="password" class="form-control" id="regPassword" placeholder="Password" required>
                           </div>
                           <div class="help-block text-right">
-                            By clicking register you accept our <a href="">Terms & Conditions</a>
+                            By clicking register you accept our
+                            <a href="">Terms & Conditions</a>
                           </div>
                           <div class="form-group">
                             <button id="regButton" type="submit" class="btn btn-primary btn-block">Register</button>
@@ -146,9 +161,9 @@
                       <div class="col-md-12">
                         Login via
                         <div class="social-buttons">
-                          <a href="#" class="btn btn-fb">
+                          <a id="FBLogin" href="" class="btn btn-fb">
                             <i class="fa fa-facebook"></i> Facebook</a>
-                          <a href="#" class="btn btn-tw">
+                          <a href="" class="btn btn-tw">
                             <i class="fa fa-twitter"></i> Twitter</a>
                         </div>
                         or
@@ -172,10 +187,10 @@
                       <div class="bottom text-center">
                         New here ?
                         <span id="gotoReg">
-                        <a href="">
-                          <b>Join Us</b>
-                        </a>
-                      </span>
+                          <a href="">
+                            <b>Join Us</b>
+                          </a>
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -203,7 +218,7 @@
 
 
   <footer>
-    <div class="row">
+    <div class="row container">
       <div class="col-lg-12">
         <div class="col-lg-3 col-md-6">
           <div class="container">
