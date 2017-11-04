@@ -4,11 +4,28 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var multer = require('multer');
 // var mongoose = require('mongoose')
 var session= require('express-session')
 var _ = require('lodash');
 
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './upload/images/');
+  },
+  filename: function (req, file, cb) {
+    if(!(file.originalname.match(/\.(jpg|jpeg|pgn)$/))){
+      var err= new Error();
+      err.code='filetype';
+      return cd(err)
+    }else{  
+      cb(null, + Date.now() + '-'+file.originalname )
+    }
+  }
+})
 
+var upload = multer({ storage: storage }).single('myfile')
+var multer = require('multer');
 var mongodb=require('mongodb');
 var monk=require('monk');
 var db = monk('localhost:27017/bookMe_data_base');
@@ -49,6 +66,26 @@ app.use('/hotels', hotels);
 app.use('/login', login);
 // mongoose.connect('mongodb://localhost/' + db);
 
+app.post('/upload', function (req, res) {
+  upload(req, res, function (err) {
+    if (err) {
+      if(err.code=='filetype'){
+        res.json({success:false,message:'File Type is invalid it must be jpg|jpeg|pgn'})
+      }else{
+        console.log(err);
+        res.json({success:false,message:'fail to upload'})
+      }
+    }else{
+      if(!req.file){
+        res.json({success:false,message:'no file was selected'})
+      }else{
+        res.json({success:true,message:'file was uploaded'})
+      }
+    }
+
+    // Everything went fine
+  })
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

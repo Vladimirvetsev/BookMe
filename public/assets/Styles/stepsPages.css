@@ -53,7 +53,7 @@
   border-color: rgba(117, 107, 107, 0.88);
 } 
 .progressbar li.active + li:after {
-  background-color: rgba(117, 107, 107, 0.88);
+  /* background-color: rgba(117, 107, 107, 0.88); */
 }
 #first_step{
   max-width: 1000px;

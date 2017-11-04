@@ -10,7 +10,7 @@
 </section>
 <section id='first_step' ng-controller="stepController">
 
-    <form action="">
+    <form action="" method="post">
 
         <div class='step_heading'>
             <h2>What kind of place are you listing?</h2>
@@ -75,8 +75,7 @@
                 <option value="more_than_10">More than 10</option>
             </select>
         </div>
-        <!-- </div>
-        <div> -->
+        
         <div class='step_heading'>
             <h2>Okay now! How many beds your property has</h2>
         </div>
@@ -98,8 +97,7 @@
         <div class='hotel_input'>
             <input type="number" ng-model="hotelData.bathroomsCount">
         </div>
-        <!-- </div> -->
-        <!-- <div> -->
+        
         <div class='step_heading'>
             <h2>Where's you place located</h2>
         </div>
@@ -108,7 +106,7 @@
         </div>
         <div class='hotel_input'>
             <select name="country" id="country" ng-model="hotelData.country">
-                <!-- ?<optgroup id="country-optgroup-Europe" label="Europe"> -->
+                <optgroup id="country-optgroup-Europe" label="Europe"> 
                     <option value="Albania" label="Albania">Albania</option>
                     <option value="Andorra" label="Andorra">Andorra</option>
                     <option value="Austria" label="Austria">Austria</option>
@@ -117,7 +115,7 @@
                     <option value="Bosnia_and_Herzegovina" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
                     <option value="Bulgaria" label="Bulgaria">Bulgaria</option>
                     <option value="Croatia" label="Croatia">Croatia</option>
-                    <!-- </optgroup> -->
+                    </optgroup> 
                 </select>
         </div>
         <div class="hotel_type">
@@ -138,15 +136,13 @@
         <div class='hotel_input'>
             <input type="text" ng-model="hotelData.postCode">
         </div>
-        <!-- </div> -->
 
-        <!-- <div> -->
         <div class='step_heading'>
             <h2>You're almost there! Let's see your property facilities</h2>
         </div>
 
          <div class='hotel_facilities'>
-            <input type="checkbox" ng-model="hotelData.facilities.wifi"><span>Wifi</span>
+            <input type="checkbox" ng-model="hotelData.facilities[0].wifi"><span>Wifi</span>
         </div>
         <div class="hotel_facilities">
             <input type="checkbox" ng-model="hotelData.facilities.tv"><span>TV</span>
@@ -190,8 +186,13 @@
         </div> 
         <span>Thank you, that's all!</span><button ng-click="addNewHotel($event)">Sign Your Property</button>
     </form>
+    <form ng-submit='Submit()'>
+            <input type="file" name='myfile'id="files" file-model="file.upload" />      
+            <button type="submit" >Add Photo</button>      
+    </form>
     <p>{{hotelData}}</p>
     <p>{{facilities}}</p>
+    <p>{{file}}</p>
     <!-- <input type="text">
         <input type="text">
         <input type="text">

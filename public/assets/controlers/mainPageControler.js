@@ -10,13 +10,14 @@ app.controller('mainPageController', function($scope, $http) {
         $scope.myhotel = response.statusText;
     });
     
-   
+    
    $scope.town='';
    $scope.likes=0;
+   $scope.searchtown='';
    console.log($scope.likes)
    $scope.propertyName = 'likes';
    $scope.reverse = true;
-   $scope.myhotels = $scope.myhotels;
+   
  
    $scope.sortBy = function(propertyName) {
      $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
