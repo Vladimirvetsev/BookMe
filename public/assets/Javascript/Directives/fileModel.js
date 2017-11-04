@@ -1,16 +1,17 @@
-app.directive('fileModel', ['$parse', function($parse){
-	return {
-		restrict: 'A',
-		link: function(scope, element, attrs){
-			var model = $parse(attrs.fileModel);
-			var modelSetter = model.assign;
+angular.module('fileModelDirective', [])
 
-			element.bind('change', function(){
-				scope.$apply(function(){
-                    var a=element[0].files[0];
-					modelSetter(scope, a.size);
-				})
-			})
-		}
-	}
-}])
+.directive('fileModel', ['$parse', function($parse) {
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            var parsedFile = $parse(attrs.fileModel);
+            var parsedFileSetter = parsedFile.assign;
+
+            element.bind('change', function() {
+                scope.$apply(function() {
+                    parsedFileSetter(scope, element[0].files[0]);
+                });
+            });
+        }
+    };
+}]);

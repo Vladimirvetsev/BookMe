@@ -170,7 +170,7 @@ body{
 }
 
 .buttons{
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 15px;
 } 
 .hotel_main_image{
@@ -178,9 +178,8 @@ body{
 
 }
 .buttons>button{
-    wdith:50%;
     border: none;
-    padding: 6px;
+    padding: 8px;
     
 }
 .icon{
@@ -210,7 +209,6 @@ body{
     }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 992px)
 {
     .one_hotel {
@@ -225,5 +223,3 @@ body{
     .allTheHotels {
     width:1170px;
 }
-=======
->>>>>>> 0fab96e4de1fecbf35219db21bcd5c1259373787
