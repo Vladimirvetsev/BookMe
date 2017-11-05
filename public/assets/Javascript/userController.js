@@ -16,10 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = user[0].firstName + " " + user[0].lastName
-                    document.getElementById("logout").addEventListener("click", function () {
-                        document.getElementById("userDropdown").style.display = "none"
-                        document.getElementById("login").style.display = "block"
-                    })
+                    $("#login-dp").toggle()
                 } else {
                     error("#loginButton")
                 }
@@ -52,9 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    document.getElementById("login").addEventListener("click", function () {
+    document.getElementById("login").addEventListener("click", function (event) {
         event.preventDefault()
         $("#login-dp").toggle()
+    })
+
+    document.getElementById("logout").addEventListener("click", function () {
+        FB.getLoginStatus(function(response) {
+            if (response.status === 'connected') { 
+                FB.logout(function(response) {
+                });
+            }
+        })
+        document.getElementById("userDropdown").style.display = "none"
+        document.getElementById("login").style.display = "block"
     })
 
     document.getElementById("gotoReg").addEventListener("click", function () {
@@ -75,14 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = response.name
-                }
-                );
-                document.getElementById("logout").addEventListener("click", function () {
-                    FB.logout(function(response) {
-                     });
-                    document.getElementById("userDropdown").style.display = "none"
-                    document.getElementById("login").style.display = "block"
-                })
+                    $("#login-dp").toggle()
+                });
             } else {
                 alert("Problem with logging in")
             }

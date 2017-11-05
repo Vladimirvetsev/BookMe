@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BookMe</title>
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
   <link rel="icon" href="assets/Images/Images-Icon/title_icon.png" />
   <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>  -->
@@ -21,9 +21,11 @@
   <link rel="stylesheet" href="assets/Styles/AddHotel.css" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
+  <script src="node_modules/pgwslideshow/pgwslideshow.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
@@ -35,6 +37,7 @@
   <script src="assets/controlers/viewDetailsController.js"></script>
   <!-- <script src="assets/Javascript/viewtry.js"></script> -->
   <script src="assets/Javascript/userController.js"></script>
+  <script src="assets/Javascript/carousel.js"></script>
   <script src="assets/controlers/stepController.js"></script>
 
   <script src="assets/Javascript/userService.js"></script>
@@ -109,8 +112,8 @@
                 </li>
               </ul>
             </li>
-            <li id="login" class="dropdown">
-              <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            <li class="dropdown">
+              <a id="login" href="" class="dropdown-toggle" data-toggle="dropdown">
                 <b>Login</b>
                 <span class="caret"></span>
               </a>
@@ -207,6 +210,24 @@
 
 
   <main>
+      <ul class="pgwSlideshow">
+          <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt="Rio de Janeiro, Brazil"></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+          <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+          <li>
+              <a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
+                  <img src="assets\Images\Images-JPG\hotel1room3.jpg" alt="Monaco">
+              </a>
+          </li>
+      </ul>
     <div ng-view>
 
     </div>
