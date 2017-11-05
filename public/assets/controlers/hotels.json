@@ -1,4 +1,22 @@
 [{
+    "name": "Hotel Andera",
+    "town": "bankq",
+    "country": "Bulgaria",
+    "location": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg"
+    ],
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "facilities": [
+        {"wifi":"true", "fName":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"bar":"true", "fName":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"spa":"true", "fName":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"elevator":"true", "fName":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"swiming_pool":"true", "fName":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ]
+},
+    {
     "id": 1,
     "country": "bulgaria",
     "town": "sofia",

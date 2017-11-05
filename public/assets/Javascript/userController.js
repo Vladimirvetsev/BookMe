@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
     document.getElementById("loginButton").addEventListener("click", function () {
+        event.preventDefault();
         var userEmail = document.getElementById("loginEmail").value;
         var userPassword = document.getElementById("loginPassword").value;
         if ((userEmail.length > 0) && (userPassword.length > 0) && (userEmail.indexOf("@") != -1) && (userEmail.indexOf("@") != 0) && (userEmail.indexOf("@") != userEmail.length)) {
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    document.getElementById("login").addEventListener("click", function (event) {
+    document.getElementById("loginButton").addEventListener("click", function (event) {
         event.preventDefault()
         $("#login-dp").toggle()
     })

@@ -1,48 +1,66 @@
 <section id='main_page_content' ng-controller="mainPageController">
+    <!-- <div class='carousel' ng-include="'assets/externalHTM/carousel.htm'"></div> -->
+
+
 
     <h1>Find hotels from all over the world</h1>
-    
-        <div class="input_search">
-            <span >
+
+    <div class="input_search">
+        <span>
                   <button class="input_btn" ng-click="searchtown=town"  >Go!</button>
                 </span>
-                <input type="text" class="form-control" placeholder="Search for town..." ng-model="town">
-            </div>
-         
-        
-    <div id='allTheHotels' >
+        <input type="text" class="form-control" placeholder="Search for town..." ng-model="town">
+    </div>
+
+
+    <div>
+
         <button ng-click='sortBy("name")'>Name</button>
         <button ng-click='sortBy("hotelStars")'>Start</button>
         <button ng-click='sortBy("likes")'>Likes</button>
-        <!-- <button>Price</button> -->
-        <hr>
-        <!-- <button>Likes</button> -->
-        <article class='one_hotel'  ng-show="searchtown===town" ng-repeat="hotels in myhotels | orderBy:propertyName:reverse|filter: {town:searchtown}">
-            <img class='hotel_main_image' ng-src="{{hotels.Photos[0]}}" /> 
-            <h2>{{hotels.name}}</h2>
-            <h2>{{hotels._id}}</h2>
-            <h2>{{hotels.hotelStars}}</h2>
-            <h2>{{hotels.likes}}</h2>
-            <p>{{hotels.shortDescription}}</p>
-            <!-- <span >{{hotels.type}}</span><br> -->
-            <!-- LIKE BUTTON MUST ONLY BE AVAILABLE WHEN USER IS LOGED IN -->
-            <img src="assets/Images/Images-Icon/like-Button.png" ng-click="likes=likes+1" style="width:20px;" alt="">{{hotels.likes+likes}}
-            <button><a href="#!/viewdetails/{{hotels._id}}">view</a></button>
-            <!-- <span>This hotel has {{hoteles.grade}} stars</span> -->
-            
-        </article>
-        <!-- <script type="text/ng-template" id="add_order.html">
-            <h2> Add Order </h2>
-            {{message}}
-        </script> -->
-        <!-- <div ng-controller="viewDetailsController">
-            <h1 style="font-size:120px;">
-                {{hotel.name}}
-                </h1>
-     </div> -->
-     
-     <!-- <script src="assets/controlers/viewDetail.js"></script> -->
-     
+    </div>
+    <!-- <button>Price</button> -->
+    <hr>
+    <!-- <button>Likes</button> -->
+    <div class='allTheHotels'>
+        <div id='content'>
 
+            <article class='one_hotel' ng-repeat="hotels in myhotels | orderBy:propertyName:reverse" ng-show="searchtown==hotels.town">
+                <div class='one_add'>
+                    <div class='left_container'>
+                        <img class='hotel_main_image' ng-src="{{hotels.Photos[0]}}" />
+                        <!-- <span>
+                                {{hotels.likes}}
+                            </span> -->
+                        <!-- <span>
+                                {{hotels.views}}
+                            </span> -->
+                        <ul class='main_facilities'>
+                            <li><img class='icon' ng-src="{{hotels.facilities[0].imgURL}}">{{hotels.facilities[0].fName}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[1].imgURL}}">{{hotels.facilities[1].fName}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[2].imgURL}}">{{hotels.facilities[2].fName}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[4].imgURL}}">{{hotels.facilities[4].fName}}</li>
+                        </ul>
+                        <!-- <div ng-show="hotels.facilities[0].wifi">
+                            <img  ng-src="{{hotels.facilities[0].imgURL}}">
+                             </div> -->
+                    </div>
+                    <div class='right_container'>
+                        <div class='hot_header'>
+                            <h2>{{hotels.name}}</h2>
+                        </div>
+                        <div class='description'>
+                            <h3>{{hotels.town}}, {{hotels.country}}</h3>
+                            <p>{{hotels.description}}</p>
+                        </div>
+                                <div class="buttons" role="group" aria-label="...">
+                                        <button class="pure-button">Like</button>
+                                        <button class="pure-button">Favorite</button>
+                                </div>
+                        </div>
+                    </div>
+            </article>
+            </div>
+        </div>
 </section>
 <script src="assets/controlers/mainPageControler.js"></script>
