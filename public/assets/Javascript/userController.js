@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var logged = false
     function error(ID) {
         var originalColor = $(ID).css("background-color")
         $(ID).effect("shake")
@@ -50,18 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
-    document.getElementById("loginButton").addEventListener("click", function (event) {
+    document.getElementById("login").addEventListener("click", function (event) {
         event.preventDefault()
         $("#login-dp").toggle()
     })
 
     document.getElementById("logout").addEventListener("click", function () {
-        FB.getLoginStatus(function(response) {
-            if (response.status === 'connected') { 
-                FB.logout(function(response) {
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                FB.logout(function (response) {
                 });
             }
         })
+        if (logged == true) {
+            logged = false
+            gapi.auth2.getAuthInstance().signOut()
+        }
         document.getElementById("userDropdown").style.display = "none"
         document.getElementById("login").style.display = "block"
     })
@@ -81,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (response.status == "connected") {
                 FB.api('/me', function (response) {
                     alert('Welcome ' + response.name);
+                    loginFacebook({ name: response.name })
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = response.name
@@ -90,5 +96,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Problem with logging in")
             }
         }, { perms: '' });
+    })
+
+    document.getElementById("googleLogin").addEventListener("click", function () {
+        gapi.load('auth2', function () {
+            gapi.auth2.init({
+                client_id: "989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com",
+                scope: "profile email" // this isn't required
+            }).then(function (auth2) {
+                console.log("signed in: " + auth2.isSignedIn.get());
+                var button = document.querySelector('#googleLogin');
+                button.addEventListener('click', function () {
+                    auth2.signIn();
+                });
+            }).then(function () {
+                var googleUser = gapi.auth2.getAuthInstance().currentUser.get();
+                var profile = googleUser.getBasicProfile();
+                logged = true
+                console.log('Full Name: ' + profile.getName());
+                console.log('Given Name: ' + profile.getGivenName());
+                console.log('Family Name: ' + profile.getFamilyName());
+                console.log("Image URL: " + profile.getImageUrl());
+                console.log("Email: " + profile.getEmail());
+                console.log(profile)
+                alert('Welcome ' + profile.getName());
+                loginFacebook({ name: profile.getName() })
+                document.getElementById("userDropdown").style.display = "block"
+                document.getElementById("login").style.display = "none"
+                document.querySelector("#userDropdown >a").textContent = profile.getName()
+                $("#login-dp").toggle()
+            })
+        });
     })
 })

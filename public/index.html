@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com">
   <title>BookMe</title>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
@@ -26,6 +27,7 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
   <script src="node_modules/pgwslideshow/pgwslideshow.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script> 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
@@ -168,8 +170,8 @@
                         <div class="social-buttons">
                           <a id="FBLogin" href="" class="btn btn-fb">
                             <i class="fa fa-facebook"></i> Facebook</a>
-                          <a href="" class="btn btn-tw">
-                            <i class="fa fa-twitter"></i> Twitter</a>
+                          <a id="googleLogin" href="" class="btn btn-google">
+                            <i class="fa fa-google"></i> Google</a>
                         </div>
                         or
                         <form>
