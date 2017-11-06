@@ -20,11 +20,39 @@
     /* font-family: 700; */
 }
 .start_listing{
-    position: absolute;
+    /* position: absolute; */
     width:10%;
-    top:100px;
-    left: 80%;
-    background-color: white;
+    height: 60px;
+    background: rgba(17, 17, 17,0.3);
+    margin: auto;
+    padding: 12px;
+    font-size: 1.5em;
+text-align: center;
+box-sizing: border-box;
+font-family: 
+    /* padding-left: 40px; */
+}
+.start_listing:hover{
+    background-color:white;
+
+}
+.start_listing a{
+    color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding: 17px;
+    font-family:Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-weight: 700 ;
+}
+.start_listing a{
+    text-decoration: none;
+}
+.start_listing a:hover{
+    color: rgba(17, 17, 17,0.8);
+    text-decoration: none;
+}
+.start_listing a:active{
+    text-decoration: none;
 }
 #get_started{
      position: relative;
@@ -43,14 +71,7 @@ hr{
     border-style: none none none solid;
     border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color rgb(1, 2116, 2116)
   }
-.sign_hotel_step{    
-    /* background-color: lightblue; */
-    /* clear: both; */
-    /* float: left; */
-    /* display: inline-block; */
-    
-    
-}
+
 #steps{
     /* position: absolute; */
     margin:0 auto; 
@@ -95,8 +116,8 @@ hr{
     background-image: url("../Images/Images-JPG/step1.jpeg");
     background-size: 350px auto !important;
     background-repeat: no-repeat;
-    width: 350px !important;
-    height: 350px !important;
+    width: 34%;
+    height: 350px ;
     display: inline-block;
     
 }
@@ -104,18 +125,21 @@ hr{
     background-image: url("../Images/Images-JPG/step2.jpeg");
     background-size: 350px auto !important;
     background-repeat: no-repeat;
-    width: 350px !important;
-    height: 350px !important;
+    width: 34%;
+    height: 350px ;
     display: inline-block;
+    
 }
 .step_img3{
     background-image: url("../Images/Images-JPG/step3.jpeg");
     background-size: 350px auto !important;
     background-repeat: no-repeat;
-    width: 350px !important;
-    height: 350px !important;
+    width: 34%;
+    height: 350px ;
     display: inline-block;
+    
 }
+
 .Title_description{
     font-weight: 700 ;
     padding-bottom: 0.6em;
@@ -131,10 +155,39 @@ hr{
     
 }
 .second_description{
-
+    
     padding-bottom: 0.6em;
 }
 .third_description{
     padding-bottom: 0.6em;
+    
+}
 
+@media screen and (max-width:900px) {
+    .sign_hotel_step{
+        width:40%;
+        margin:auto;
+    }
+    .step_num{
+        float: none;
+        width: 23%;
+        margin: auto;
+    }
+    .step_description{
+        text-align: center;
+    }
+    .step_img1{
+        width: 100%;
+        height: 200px;
+    }
+    .step_img2{
+        width: 100%;
+        height: 200px;
+    }
+    .step_img3{
+        width: 100%;
+        height: 200px;
+    }
+    
+    
 }

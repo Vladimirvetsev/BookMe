@@ -186,14 +186,25 @@
         </div> 
         <span>Thank you, that's all!</span><button ng-click="addNewHotel($event)">Sign Your Property</button>
     </form>
-    <form ng-submit='Submit()' >
-            <input type="file" name='myfile'id="files" file-model="file.upload" />      
-            <button type="submit" >Add Photo</button>      
-    </form>
-    <img style="width:200px;" ng-src="{{thumbnail.dataURL ||' http://www.agnitravel.com/pics/gallery/205/cochelli-villa-upper_596.jpg' }}">
+    <form ng-submit="Submit();">
+    <label class="btn btn-success">
+        Browse
+        <input type="file" ng-disabled="uploading" file-model="file.upload" name="myfile" style="display: none;" onchange="angular.element(this).scope().photoChanged(this.files)">
+    </label>
+    <br>
+    <br>
+    <button ng-disabled="uploading" type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+<br>
+
+<img class="mythumbnail" style="width:100px;"ng-src="{{ thumbnail.dataUrl || default }}">
     <p>{{hotelData}}</p>
     <p>{{facilities}}</p>
     <p>{{file}}</p>
+    <p>{{ thumbnail.dataUrl }}</p>
+
+
     <!-- <input type="text">
         <input type="text">
         <input type="text">

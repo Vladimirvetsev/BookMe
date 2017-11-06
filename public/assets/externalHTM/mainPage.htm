@@ -1,28 +1,62 @@
 <section id='main_page_content' ng-controller="mainPageController">
-    <!-- <div class='carousel' ng-include="'assets/externalHTM/carousel.htm'"></div> -->
+        <!-- <div  ng-include="'assets/externalHTM/carousel.htm'"></div> -->
+        <!-- <div ng-include = "'assets/externalTHM/carousel.htm'"></div> -->
+    <!-- <ul class="pgwSlideshow">
+            <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt="Rio de Janeiro, Brazil"></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room3.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt=""></li>
+            <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt=""></li>
+            <li>
+              <a href="http://en.wikipedia.org/wiki/Monaco" target="_blank">
+                            <img src="assets\Images\Images-JPG\hotel1room3.jpg" alt="Monaco">
+                        </a>
+            </li>
+          </ul> -->
 
 
+    
 
-    <h1>Find hotels from all over the world</h1>
-
-    <div class="input_search">
-        <span>
-                  <button class="input_btn" ng-click="searchtown=town"  >Go!</button>
-                </span>
+          <h1>Find hotels from all over the world</h1>
+    <!-- <div class="form-wrapper cf">
+        
         <input type="text" class="form-control" placeholder="Search for town..." ng-model="town">
-    </div>
+                  <button class="input_btn" ng-click="searchtown=town"  >Go!</button>
+    </div> -->
+    <!-- <form >
+            <input type="text" placeholder="Search here..." required>
+            <button type="submit">Search</button>
+        </form>  -->
 
-
-    <div>
-
-        <button ng-click='sortBy("name")'>Name</button>
-        <button ng-click='sortBy("hotelStars")'>Start</button>
-        <button ng-click='sortBy("likes")'>Likes</button>
-    </div>
+   
     <!-- <button>Price</button> -->
     <hr>
     <!-- <button>Likes</button> -->
     <div class='allTheHotels'>
+            <div class='filter'>
+                <ul>
+                    <li class='firstEl'> <button ng-click='sortBy("name")'>Name</button></li>
+                    <li><button ng-click='sortBy("hotelStars")'>Start</button></li>
+                    <li><button ng-click='sortBy("likes")'>Likes</button></li>
+                    <li class="form-wrapper cf">
+                            <input type="text" class="form-control" placeholder="Search for town..." ng-model="town">
+                        </li>
+                        <li>
+                            <button class="input_btn" ng-click="searchtown=town"  >Go!</button>
+                            </li>
+                </ul>
+            </div>
+                <!-- 
+                            <button ng-click='sortBy("name")'>Name</button>
+                            <button ng-click='sortBy("hotelStars")'>Start</button>
+                            <button ng-click='sortBy("likes")'>Likes</button>
+                        </div> -->
         <div id='content'>
 
             <article class='one_hotel' ng-repeat="hotels in myhotels | orderBy:propertyName:reverse" ng-show="searchtown==hotels.town">
@@ -54,7 +88,7 @@
                             <p>{{hotels.description}}</p>
                         </div>
                                 <div class="buttons" role="group" aria-label="...">
-                                        <button class="pure-button">Like</button>
+                                        <button class="pure-button"><a href="#!/viewdetails/{{hotels._id}}">View</a></button>
                                         <button class="pure-button">Favorite</button>
                                 </div>
                         </div>

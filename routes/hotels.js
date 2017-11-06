@@ -22,6 +22,26 @@ router.post('/', function (req, res, next) {
        res.json(r);
    })
 });
+router.put('/:id',function(req,res,next){
+    var hotelcollections = req.db.get('hotels')
+    var id = req.params.id;
+    console.log(id);
+    // console.log(req);
+    console.log(req.body);
+    var hotels=req.body;
+    hotelcollections.update(
+        {_id:id},
+        {$push: {storedDates:hotels}})
+    
+    // var myHotel=hotelcollections.find({_id:req.params.id})
+    // .then(function(data){
+    //     data.update({}:{stroredData})
+    // })
+
+    //     hotelcollections.updateOne({id:myHotel}, {$push:{myHotel:sotedData}});
+    //    })
+    // })
+})
 // router.post('/uploads', function (req, res, next) {
 // });
 // router.post('/upload', upload.array('customers', 1), function (req, res, next) {

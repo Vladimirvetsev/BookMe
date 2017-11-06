@@ -1,11 +1,17 @@
 <section style="padding-top:10%;width:500px; height:500px; " ng-controller="viewDetailsController">
-    <input type="text" name="" ng-model="town" >
+    
     <!-- {{town}} -->
     <!-- {{hotel}} -->
     <div ng-repeat="x in myhotels |filter:{_id:thishotel}">
-        {{thishotel}}
+        {{x.storedDates}}
+        {{thishotel.storedDates}}
         <h1 style="font-size:20px; color:black;">{{x.name}}</h1>
         <h1 style="font-size:20px; color:black;">{{x._id}}</h1>
+        <input type="date" name="firstDay" ng-model='example1.value'>
+        <input type="date" name="secondDate" ng-model='example2.value'>
+        {{example1.value}}
+        {{example2.value}}
+        <button ng-click="setDates($event)">Set Dates</button>
     </div>
 </section>
 

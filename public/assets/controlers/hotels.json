@@ -1,12 +1,13 @@
 [{
-    "name": "Hotel Andera",
-    "town": "bankq",
+    "name": "Hotel Malina",
+    "town": "Most",
     "country": "Bulgaria",
     "location": "Sain Louise, str. 23",
     "type": "Hotel",
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg"
     ],
+    "storedDates":[],
     "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
     "facilities": [
         {"wifi":"true", "fName":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
