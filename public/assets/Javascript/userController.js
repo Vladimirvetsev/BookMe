@@ -1,5 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
     var logged = false
+
+    gapi.load('auth2', function () {
+        gapi.auth2.init({
+            client_id: "989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com",
+            scope: "profile email" // this isn't required
+        }).then(function (auth2) {
+            console.log("signed in: " + auth2.isSignedIn.get());
+            document.getElementById("googleLogin").addEventListener('click', function () {
+                auth2.signIn().then(function () {
+                if (auth2.isSignedIn.get()) {
+                    var googleUser = gapi.auth2.getAuthInstance().currentUser.get();
+                    var profile = googleUser.getBasicProfile();
+                    logged = true
+                    alert('Welcome ' + profile.getName());
+                    loginOther({ name: profile.getName() })
+                    document.getElementById("userDropdown").style.display = "block"
+                    document.getElementById("login").style.display = "none"
+                    document.querySelector("#userDropdown >a").textContent = profile.getName()
+                    $("#login-dp").toggle()
+                }
+            })
+            })
+        })
+    })
+
+
     function error(ID) {
         var originalColor = $(ID).css("background-color")
         $(ID).effect("shake")
@@ -9,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
     document.getElementById("loginButton").addEventListener("click", function () {
-        event.preventDefault();
         var userEmail = document.getElementById("loginEmail").value;
         var userPassword = document.getElementById("loginPassword").value;
         if ((userEmail.length > 0) && (userPassword.length > 0) && (userEmail.indexOf("@") != -1) && (userEmail.indexOf("@") != 0) && (userEmail.indexOf("@") != userEmail.length)) {
@@ -65,7 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         if (logged == true) {
             logged = false
-            gapi.auth2.getAuthInstance().signOut()
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            })
         }
         document.getElementById("userDropdown").style.display = "none"
         document.getElementById("login").style.display = "block"
@@ -86,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (response.status == "connected") {
                 FB.api('/me', function (response) {
                     alert('Welcome ' + response.name);
-                    loginFacebook({ name: response.name })
+                    loginOther({ name: response.name })
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = response.name
@@ -98,34 +126,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }, { perms: '' });
     })
 
-    document.getElementById("googleLogin").addEventListener("click", function () {
-        gapi.load('auth2', function () {
-            gapi.auth2.init({
-                client_id: "989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com",
-                scope: "profile email" // this isn't required
-            }).then(function (auth2) {
-                console.log("signed in: " + auth2.isSignedIn.get());
-                var button = document.querySelector('#googleLogin');
-                button.addEventListener('click', function () {
-                    auth2.signIn();
-                });
-            }).then(function () {
-                var googleUser = gapi.auth2.getAuthInstance().currentUser.get();
-                var profile = googleUser.getBasicProfile();
-                logged = true
-                console.log('Full Name: ' + profile.getName());
-                console.log('Given Name: ' + profile.getGivenName());
-                console.log('Family Name: ' + profile.getFamilyName());
-                console.log("Image URL: " + profile.getImageUrl());
-                console.log("Email: " + profile.getEmail());
-                console.log(profile)
-                alert('Welcome ' + profile.getName());
-                loginFacebook({ name: profile.getName() })
-                document.getElementById("userDropdown").style.display = "block"
-                document.getElementById("login").style.display = "none"
-                document.querySelector("#userDropdown >a").textContent = profile.getName()
-                $("#login-dp").toggle()
-            })
-        });
-    })
 })
