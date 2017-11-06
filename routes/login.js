@@ -25,10 +25,11 @@ router.put('/', function (req, res, next) {
   })
 });
 
-router.put('/facebook', function (req, res, next) {
+router.put('/other', function (req, res, next) {
   var userCollection = req.db.get('users');
   var newUser = req.body
   userCollection.find({name: newUser.name}, function (err, docs) {
+    console.log(docs)
     if (docs.length == 0) {
       userCollection.insert(newUser)
       userCollection.update({ name: newUser.name }, { "$set": { arrayBookings: [], arrayVisitedHotels: [], arrayFavoriteHotels: [], arrayOwnHotel: [] } }, function (e, result) {
@@ -40,19 +41,19 @@ router.put('/facebook', function (req, res, next) {
   })
 });
 
-router.put('/google', function (req, res, next) {
-  var userCollection = req.db.get('users');
-  var newUser = req.body
-  userCollection.find({name: newUser.name}, function (err, docs) {
-    if (docs.length == 0) {
-      userCollection.insert(newUser)
-      userCollection.update({ name: newUser.name }, { "$set": { arrayBookings: [], arrayVisitedHotels: [], arrayFavoriteHotels: [], arrayOwnHotel: [] } }, function (e, result) {
-        res.json(result)
-      })
-    } else {
-      res.json(docs)
-    }
-  })
-});
+// router.put('/google', function (req, res, next) {
+//   var userCollection = req.db.get('users');
+//   var newUser = req.body
+//   userCollection.find({name: newUser.name}, function (err, docs) {
+//     if (docs.length == 0) {
+//       userCollection.insert(newUser)
+//       userCollection.update({ name: newUser.name }, { "$set": { arrayBookings: [], arrayVisitedHotels: [], arrayFavoriteHotels: [], arrayOwnHotel: [] } }, function (e, result) {
+//         res.json(result)
+//       })
+//     } else {
+//       res.json(docs)
+//     }
+//   })
+// });
 
 module.exports = router;
