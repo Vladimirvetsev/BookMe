@@ -38,7 +38,7 @@ var app = express();
 var index = require('./routes/index');
 var hotels = require('./routes/hotels');
 // var viewdetails = require('./routes/viewdetails');
-// var users = require('./routes/users');
+var users = require('./routes/users');
 var login = require('./routes/login');
 
 app.use(function(req,resp,next){
@@ -64,7 +64,7 @@ app.use(session({secret: 'bookingPassword'}));
 
 app.use('/', index);
 app.use('/hotels', hotels);
-
+app.use('/users', users);
 app.use('/login', login);
 // mongoose.connect('mongodb://localhost/' + db);
 app.post('/upload', function(req, res) {

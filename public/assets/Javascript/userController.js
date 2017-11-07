@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = profile.getName()
                     $("#login-dp").toggle()
+                } else {
+                    alert("Problem with logging in")
                 }
             })
             })

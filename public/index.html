@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="google-signin-client_id" content="989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com">
+  <!-- <meta name="google-signin-client_id" content="989390393425-uvlkuip97hf49rudt7vcgvestqk89n1r.apps.googleusercontent.com"> -->
   <title>BookMe</title>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+  <script src="https://apis.google.com/js/platform.js"></script> 
   <link rel="icon" href="assets/Images/Images-Icon/title_icon.png" />
   <!-- <link rel="stylesheet" href="assets/Styles/HeaderStylesheet.css"/>  -->
   <link rel="stylesheet" href="assets/Styles/Header.css" />
@@ -24,14 +25,19 @@
   <link rel="stylesheet" href="assets/Styles/stepsPages.css" />
   <link rel="stylesheet" href="assets/Styles/details.css" />
   <link rel="stylesheet" href="assets/Styles/AddHotel.css" />
+  <link rel="stylesheet" href="assets/Styles/Aside.css" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="node_modules/pgwslideshow/pgwslideshow.min.css"> -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- <script src="assets/Javascript/basic-functionalities.js"></script> -->
+<<<<<<< HEAD
   <!-- <script src="node_modules/pgwslideshow/pgwslideshow.min.js"></script> -->
   <script src="https://apis.google.com/js/platform.js" ></script> 
+=======
+  <script src="node_modules/pgwslideshow/pgwslideshow.min.js"></script>
+>>>>>>> e91d3991181eadfa578112d8e6f589ce4a661b95
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
@@ -42,8 +48,10 @@
   <script src="assets/controlers/loginController.js"></script>
   <script src="assets/controlers/registerController.js"></script>
   <script src="assets/controlers/viewDetailsController.js"></script>
+  <script src="assets/controlers/hotelsController.js"></script>
   <!-- <script src="assets/Javascript/viewtry.js"></script> -->
   <script src="assets/Javascript/userController.js"></script>
+  <script src="assets/Javascript/hotelsService.js"></script>
   <script src="assets/Javascript/carousel.js"></script>
   <script src="assets/controlers/stepController.js"></script>
 
@@ -113,10 +121,7 @@
               </a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <a href="#">Edit profile</a>
-                </li>
-                <li>
-                  <a href="#">User actions</a>
+                  <a id="gotoUser" href=".#!/user">Profile</a>
                 </li>
                 <li class="divider"></li>
                 <li id="logout">
@@ -139,11 +144,11 @@
                         <br>
                         <form>
                           <div class="form-group">
-                            <label class="sr-only" for="regEmail">First name</label>
+                            <label class="sr-only" for="regFName">First name</label>
                             <input name="regFName" type="text" class="form-control" id="regFName" placeholder="First name" required>
                           </div>
                           <div class="form-group">
-                            <label class="sr-only" for="regEmail">Last name</label>
+                            <label class="sr-only" for="regLName">Last name</label>
                             <input name="regLName" type="text" class="form-control" id="regLName" placeholder="Last name" required>
                           </div>
                           <div class="form-group">
@@ -217,6 +222,7 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
+<<<<<<< HEAD
   
         
   <!-- <ul class="pgwSlideshow">
@@ -237,6 +243,8 @@
           </a>
       </li> 
   </ul> -->
+=======
+>>>>>>> e91d3991181eadfa578112d8e6f589ce4a661b95
 
   <!-- <div id="demo" class="carousel slide" data-ride="carousel">
       <ul class="carousel-indicators">
@@ -276,8 +284,14 @@
     </div> -->
     
 
+<<<<<<< HEAD
     <main>
     <div ng-view>
+=======
+  <main>
+   
+    <div ng-view class="container">
+>>>>>>> e91d3991181eadfa578112d8e6f589ce4a661b95
 
     </div>
 
