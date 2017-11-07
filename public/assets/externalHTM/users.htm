@@ -1,68 +1,82 @@
 <section id="usersProfile" ng-controller="hotelsController">
-<div class="row" style="padding-top:100px">
-    <div class="col-md-4">
-        <aside class="navbar navbar-default sidebar" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+    <div class="row" style="padding-top:100px">
+        <div class="col-md-4">
+            <aside class="navbar navbar-default sidebar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1" style="width:100%">
+                        <ul class="nav navbar-nav">
+
+                            <li>
+                                <a id="userProfile" href="">User Settings
+                                    <span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
+                                </a>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Actions
+                                    <span class="caret"></span>
+                                    <span style="font-size:16px;float:right" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
+                                </a>
+                                <ul class="dropdown-menu forAnimate" role="menu">
+                                    <li>
+                                        <a href="" ng-click="userBookings()">Your Bookings</a>
+                                    </li>
+                                    <li>
+                                        <a href="" ng-click="userVisited()">Hotels You Visited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" ng-click="userFavorites()">Favorite Hotels</a>
+                                    </li>
+                                    <li>
+                                        <a href="" ng-click="userHotels()">Your Hotels</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1" style="width:100%">
-                    <ul class="nav navbar-nav">
-                        
-                        <li>
-                            <a id="userProfile" href="">User Settings<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span>
-                            </a>
-                            
-                        </li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span>
-                                <span style="font-size:16px;float:right" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
-                            </a>
-                            <ul class="dropdown-menu forAnimate" role="menu">
-                                    <li><a href="" ng-click="userBookings()">Your Bookings</a></li>
-                                    <li><a href="" ng-click="userVisited()">Hotels You Visited</a></li>
-                                    <li><a href="" ng-click="userFavorites()">Favorite Hotels</a></li>
-                                    <li><a href="" ng-click="userHotels()">Your Hotels</a></li>
-                                  </ul>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </aside>
-    </div>
-    <div class="col-md-8">
-        <h3>Your BookMe account</h3>
-        <hr>
+            </aside>
+        </div>
+        <div class="col-md-8">
+            <h3>Your BookMe account</h3>
+            <hr>
             <form>
-                    <div class="form-group">
-                            <label class="sr-only" for="changeFName">First name</label>
-                            <input name="changeFName" type="text" class="form-control" id="changeFName" placeholder="First name" required>
-                          </div>
-                          <div class="form-group">
-                                <label class="sr-only" for="changeLName">Last name</label>
-                                <input name="changeLName" type="text" class="form-control" id="changeLName" placeholder="Last name" required>
-                              </div>
-                              <div class="form-group">
-                                    <label class="sr-only" for="changeEmail">Email</label>
-                                    <input name="changeEmail" type="email" class="form-control" id="changeEmail" placeholder="Email" required>
-                                  </div>
-                                  <div class="form-group">
-                                        <label class="sr-only" for="changePassword">Password</label>
-                                        <input name="changePassword" type="text" class="form-control" id="changePassword" placeholder="Password" required>
-                                      </div>
-                
-                                      <div class="form-group">
-                                            <button ng-click="" id="changeButton" type="submit" class="btn btn-block">Save changes</button>
-                                          </div>
+                <div class="form-group">
+                    <label class="sr-only" for="changeFName">First name</label>
+                    <input ng-model="changeFName" type="text" class="form-control" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="changeLName">Last name</label>
+                    <input ng-model="changeLName" type="text" class="form-control" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="changeEmail">Email</label>
+                    <input ng-model="changeEmail" type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="changePassword">Password</label>
+                    <input ng-model="changePassword" type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="confirmPassword">Password</label>
+                    <input ng-model="confirmPassword" type="password" class="form-control" placeholder="Confirm your new password" required>
+                </div>
+
+                <div class="form-group">
+                    <button ng-click="editButton()" type="submit" class="btn btn-block">Save changes</button>
+                </div>
             </form>
         </div>
-</div>
+    </div>
 
 
 </section>

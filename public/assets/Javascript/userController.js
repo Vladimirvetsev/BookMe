@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $(ID).css("background-color", "#DB1818")
         setTimeout(function () {
             $(ID).css("background-color", originalColor)
-        }, 3000);
+        }, 2000);
     }
     document.getElementById("loginButton").addEventListener("click", function () {
         var userEmail = document.getElementById("loginEmail").value;
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     $("#regButton").css("background-color", "#12CC1B")
                     setTimeout(function () {
                         $("#regButton").css("background-color", originalColor)
-                    }, 3000);
+                    }, 2000);
                 }
             })
         } else {
