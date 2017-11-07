@@ -128,4 +128,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }, { perms: '' });
     })
 
+    document.getElementById("gotoUser").addEventListener("click",function() {
+        getHotels().then(function(result) {
+            var user = result[0]
+            document.getElementById("userBookings").addEventListener("click",function() {
+                user.arrayBookings.forEach(function(element) {
+                    console.log(element)
+                }, this);
+            })
+            document.getElementById("userVisited").addEventListener("click",function() {
+                user.arrayVisitedHotels.forEach(function(element) {
+                    console.log(element)
+                }, this);
+            })
+            document.getElementById("userFavorites").addEventListener("click",function() {
+                user.arrayFavoriteHotels.forEach(function(element) {
+                    console.log(element)
+                }, this);
+            })
+            document.getElementById("userHotels").addEventListener("click",function() {
+                user.arrayOwnHotels.forEach(function(element) {
+                    console.log(element)
+                }, this);
+            })
+        })
+    })
+
+
+
 })

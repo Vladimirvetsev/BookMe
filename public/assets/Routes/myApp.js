@@ -37,6 +37,10 @@ app.config(function ($routeProvider) {
         {
             templateUrl: 'assets/externalHTM/thirdStep.htm',
         })
+        .when('/user',
+        {
+            templateUrl: 'assets/externalHTM/users.htm',
+        })
     // otherwise({
     //     redirectTo:'mainPage'
     // })
