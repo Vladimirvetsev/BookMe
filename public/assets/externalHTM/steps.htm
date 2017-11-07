@@ -92,6 +92,12 @@
             <input type="number" ng-model="hotelData.bedroomsCount">
         </div>
         <div class="hotel_type">
+            <span>Price for bed</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="number" ng-model="hotelData.oneBedPrice">
+        </div>
+        <div class="hotel_type">
             <span>And bathrooms?</span>
         </div>
         <div class='hotel_input'>
@@ -104,6 +110,7 @@
         <div class="hotel_type">
             <span>Country</span>
         </div>
+        
         <div class='hotel_input'>
             <select name="country" id="country" ng-model="hotelData.country">
                 <optgroup id="country-optgroup-Europe" label="Europe"> 
@@ -117,6 +124,12 @@
                     <option value="Croatia" label="Croatia">Croatia</option>
                     </optgroup> 
                 </select>
+        </div>
+        <div class="hotel_type">
+            <span>Hotel name.</span>
+        </div>
+        <div class='hotel_input'>
+            <input type="text" ng-model="hotelData.name">
         </div>
         <div class="hotel_type">
             <span>Property addres</span>
@@ -142,46 +155,112 @@
         </div>
 
          <div class='hotel_facilities'>
-            <input type="checkbox" ng-model="hotelData.facilities[0].wifi"><span>Wifi</span>
+            <input type="checkbox" ng-model="hotelData.facilities[0].has"><span>Wifi</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.tv"><span>TV</span>
+            <input type="checkbox" ng-model="hotelData.facilities[1].has"><span>TV</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.smoke_area"><span>Smoke Area</span>
+            <input type="checkbox" ng-model="hotelData.facilities[2].has"><span>Air conditioning</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.pool"><span>Pool</span>
+            <input type="checkbox" ng-model="hotelData.facilities[3].has"><span>Pool</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.essentials"><span> Essentials</span>
+                <input type="checkbox" ng-model="hotelData.facilities[4].has"><span>Smoke Area</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.closet"><span>Closet/drawers</span>
+            <input type="checkbox" ng-model="hotelData.facilities[5].has"><span>Iron</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.airConditioning"><span>Air conditioning</span>
+            <input type="checkbox" ng-model="hotelData.facilities[6].has"><span>Gym</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.iron"><span>Iron</span>
+            <input type="checkbox" ng-model="hotelData.facilities[7].has"><span>BBQ</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.gym"><span>Gym</span>
+            <input type="checkbox" ng-model="hotelData.facilities[8].has"><span>Pets</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.bbq"><span>BBQ</span>
+            <input type="checkbox" ng-model="hotelData.facilities[9].has"><span>Hair dryer</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.pets"><span>Pets</span>
+            <input type="checkbox" ng-model="hotelData.facilities[10].has"><span>SPA</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.hairDryer"><span>Hair dryer</span>
+            <input type="checkbox" ng-model="hotelData.facilities[11].has"><span>Restaurant</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.spa"><span>SPA</span>
+            <input type="checkbox" ng-model="hotelData.facilities[12].has"><span>Bar</span>
         </div>
         <div class="hotel_facilities">
-            <input type="checkbox" ng-model="hotelData.facilities.brekfast"><span>Brekfast</span>
+            <input type="checkbox" ng-model="hotelData.facilities[13].has"><span>Meating Room</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[14].has"><span>Extra Bed</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[15].has"><span>Cloakroom</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[16].has"><span>Elevator</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[17].has"><span>Room Service</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[18].has"><span>Fountain</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[19].has"><span>Garage</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[20].has"><span>Living Room</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[21].has"><span>Tuggage Trolley</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[22].has"><span>Massage</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[23].has"><span>No Smoking Area</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[24].has"><span>Phone</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[25].has"><span>Safe</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[26].has"><span>Sauna</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[27].has"><span>Toilets</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[28].has"><span>Shops</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[29].has"><span>Towel</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[30].has"><span>Transportation</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[31].has"><span>Washing Machine</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[32].has"><span>Water Park</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[33].has"><span>Horse Riding</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[34].has"><span>Wheelchair Ramp</span>
+        </div>
+        <div class="hotel_facilities">
+            <input type="checkbox" ng-model="hotelData.facilities[35].has"><span>24/7 Reception</span>
         </div>
         </div> 
         <span>Thank you, that's all!</span><button ng-click="addNewHotel($event)">Sign Your Property</button>
@@ -190,7 +269,10 @@
     <label class="btn btn-success">
         Browse
         <input type="file" ng-disabled="uploading" file-model="file.upload" name="myfile" style="display: none;" onchange="angular.element(this).scope().photoChanged(this.files)">
+        <!-- <input type="file" ng-disabled="uploading" file-model="file.upload2" name="myfile" style="display: none;" onchange="angular.element(this).scope().photoChanged(this.files)"> -->
+        <!-- <input type="file" ng-disabled="uploading" file-model="file.upload3" name="myfile" style="display: none;" onchange="angular.element(this).scope().photoChanged(this.files)"> -->
     </label>
+   
     <br>
     <br>
     <button ng-disabled="uploading" type="submit" class="btn btn-primary">Upload</button>
