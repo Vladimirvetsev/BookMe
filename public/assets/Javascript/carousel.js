@@ -1,3 +1,3 @@
-$(document).ready(function() {
-    $('.pgwSlideshow').pgwSlideshow();
-});
+// $(document).ready(function() {
+//     $('.pgwSlideshow').pgwSlideshow();
+// });

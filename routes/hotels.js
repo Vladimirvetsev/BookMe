@@ -31,16 +31,22 @@ router.put('/:id',function(req,res,next){
     var hotels=req.body;
     hotelcollections.update(
         {_id:id},
-        {$push: {storedDates:hotels}})
-    
-    // var myHotel=hotelcollections.find({_id:req.params.id})
-    // .then(function(data){
-    //     data.update({}:{stroredData})
-    // })
-
-    //     hotelcollections.updateOne({id:myHotel}, {$push:{myHotel:sotedData}});
-    //    })
-    // })
+        {$push: {storedDates:hotels}},function(e,r){
+            res.json(r);
+        })
+})
+router.put('/:id',function(req,res,next){
+    var hotelcollections = req.db.get('hotels')
+    var id = req.param.id;
+    console.log(id);
+    // console.log(req);
+    console.log(req.body);
+    var hotels=req.body;
+    hotelcollections.update(
+        {_id:id},
+        {$push: {views:hotels}},function(e,r){
+            res.json(r);
+        })
 })
 // router.post('/uploads', function (req, res, next) {
 // });

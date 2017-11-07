@@ -1,616 +1,728 @@
 [{
     "name": "Hotel Malina",
-    "town": "Most",
+    "town": "Sofia",
     "country": "Bulgaria",
-    "location": "Sain Louise, str. 23",
+    "address": "Sain Louise, str. 23",
     "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
     "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg"
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
     "storedDates":[],
-    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
     "facilities": [
-        {"wifi":"true", "fName":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
-        {"bar":"true", "fName":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
-        {"spa":"true", "fName":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
-        {"elevator":"true", "fName":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
-        {"swiming_pool":"true", "fName":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
-    ]
-},
-    {
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
     ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 0,
-    "reservations":[
-
-    ],
-    "priceForRoom2":30,
-    "priceForRoom3":30,
-    "priceForRoom4":30
+    "views":0,
+    "likes":0
 },
 {
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
+    "name": "Hotel Kapina",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,    
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg",
         "assets/Images/Images-JPG/hotel1room2.jpg",
         "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
-    "grade": 4,
-    "likes": 0
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "plovdiv",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
     "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
     ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes":1
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 0,
-    "reservations":[
-
-    ],
-    "priceForRoom2":30,
-    "priceForRoom3":30,
-    "priceForRoom4":30
+    "views":0,
+    "likes":0
 },
 {
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 2,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
+    "name": "Hotel Motel",
+    "town": "Dublin",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg",
         "assets/Images/Images-JPG/hotel1room2.jpg",
         "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
-    "grade": 4,
-    "likes": 21
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "plovdiv",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Apolo",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 1,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
     "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
     ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 0
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 15,
-    "reservations":[
-
-    ],
-    "priceForRoom2":30,
-    "priceForRoom3":30,
-    "priceForRoom4":30
+    "views":0,
+    "likes":0
 },
 {
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
+    "name": "Hotel Samokov",
+    "town": "Samokov",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg",
         "assets/Images/Images-JPG/hotel1room2.jpg",
         "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
-    "grade": 4,
-    "likes": 0
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "plovdiv",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
     "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
     ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 0
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Body",
-    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
-    "Photos": [
-        "assets/Images/Images-JPG/hotel1room1.jpg",
-        "assets/Images/Images-JPG/hotel1room2.jpg",
-        "assets/Images/Images-JPG/hotel1room3.jpg"
-    ],
-    "grade": 4,
-    "likes": 0,
-    "reservations":[
-
-    ],
-    "priceForRoom2":30,
-    "priceForRoom3":30,
-    "priceForRoom4":30
+    "views":0,
+    "likes":0
 },
 {
-    "id": 1,
-    "country": "bulgaria",
-    "town": "sofia",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
-    "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
-    ],
+    "name": "Hotel Park",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg",
         "assets/Images/Images-JPG/hotel1room2.jpg",
         "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
-    "grade": 4,
-    "likes": 0
-},{
-    "id": 1,
-    "country": "bulgaria",
-    "town": "plovdiv",
-    "location": "moskow str. 23",
-    "type": "hotel",
-    "name": "Hotel Darling",
-    "description": "The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
-    "hotelStars": 5,
-    "roomsCount": 3,
-    "allRooms": [
-        {
-            "roomID": 1,
-            "type": 2,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        },
-        {
-            "roomID": 2,
-            "type": 3,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area, balkony"
-        },
-        {
-            "roomID": 3,
-            "type": 4,
-            "description": "The Ramada Sofia  rooms are situated within walking distance to tourist sigh",
-            "roomFacilities": "smoking area"
-        }
-    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
     "facilities": [
-        "Free parking",
-        "Free WiFi",
-        "very good spa ",
-        "wellness centre",
-        "Swimming pool",
-        "Airport shuttle",
-        "good fitness centre",
-        "Bar"
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
     ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "London",
+    "town": "London",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "oneBedPrice":9,
+    
+    "roomsCount":5,
     "Photos": [
         "assets/Images/Images-JPG/hotel1room1.jpg",
         "assets/Images/Images-JPG/hotel1room2.jpg",
         "assets/Images/Images-JPG/hotel1room3.jpg"
     ],
-    "grade": 4,
-    "likes": 0
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Dara",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Beech",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Aggie",
+    "town": "Ahtopol",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Dobrevci",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "oneBedPrice":9,
+    
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Palakaria",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "oneBedPrice":9,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Lozenec",
+    "town": "Samokov",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "oneBedPrice":9,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Bankia",
+    "town": "Bankia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "oneBedPrice":9,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Penelopa",
+    "town": "Samokov",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "oneBedPrice":9,
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Hemus",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "oneBedPrice":9,
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Sofia",
+    "town": "Bankia",
+    "oneBedPrice":9,
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Pola",
+    "town": "Bankia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "oneBedPrice":9,
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Bali",
+    "town": "Bali",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "oneBedPrice":9,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Darling",
+    "town": "Sofia",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "oneBedPrice":9,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel The Garage",
+    "town": "Plovdiv",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "oneBedPrice":9,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Plovdiv",
+    "town": "Plovdiv",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "oneBedPrice":9,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Varna",
+    "town": "Varna",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "oneBedPrice":9,
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Napoli",
+    "town": "Varna",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "oneBedPrice":9,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
+},
+{
+    "name": "Hotel Paw",
+    "town": "Plovdiv",
+    "country": "Bulgaria",
+    "address": "Sain Louise, str. 23",
+    "type": "Hotel",
+    "postCode":"1320",
+    "bedroomsCount":5,
+    "oneBedPrice":9,
+    "bathroomsCount":3,
+    "maxGuests":13,
+    "roomsCount":5,
+    "Photos": [
+        "assets/Images/Images-JPG/hotel1room1.jpg",
+        "assets/Images/Images-JPG/hotel1room2.jpg",
+        "assets/Images/Images-JPG/hotel1room3.jpg"
+    ],
+    "storedDates":[],
+    "shortDescription":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city",
+    "description":"The Ramada Sofia is situated within walking distance to tourist sights and commercial areas of the city, offering comfortable rooms in a modern building. Free WiFi is available in all areas Being12 km from Sofia International Airport, near to Central Railway and International Bus Station, the hotel enjoys a convenient location and won the Bulgaria's2009 Best Convention Hotel prize. An airport shuttle service is available on request and for a surcharge.  The lobby bar has a pleasant ambience, and the Meridien Restaurant serves international cuisie. You can use the indoor pool and fitness centre for free. You can also indulge yourself with some of the exceptional spa treatments in the Real Asian Victoria SPA centre. Centrum is a great choi",
+    "facilities": [
+        {"has":"true", "name":"Wi-Fi", "imgURL":"assets/Images/Facilities-img/icons8-wi-fi.png"},
+        {"has":"true", "name":"Bar", "imgURL":"assets/Images/Facilities-img/icons8-bar.png"},
+        {"has":"true", "name":"Spa", "imgURL":"assets/Images/Facilities-img/icons8-spa-filled.png"},
+        {"has":"true", "name":"Elevator", "imgURL":"assets/Images/Facilities-img/icons8-elevator.png"},
+        {"has":"true", "name":"Swiming pool", "imgURL":"assets/Images/Facilities-img/icons8-swimming.png"}
+    ],
+    "views":0,
+    "likes":0
 }]

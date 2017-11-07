@@ -1,6 +1,10 @@
 <section id='main_page_content' ng-controller="mainPageController">
         <!-- <div  ng-include="'assets/externalHTM/carousel.htm'"></div> -->
-        <!-- <div ng-include = "'assets/externalTHM/carousel.htm'"></div> -->
+        <video style="width:100%; height:900px; " controls:false loop autoplay>
+                <source src="assets/Videos/Background.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+                Your browser does not support the video tag.
+              </video>
     <!-- <ul class="pgwSlideshow">
             <li><img src="assets\Images\Images-JPG\hotel1room1.jpg" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
             <li><img src="assets\Images\Images-JPG\hotel1room2.jpg" alt="Rio de Janeiro, Brazil"></li>
@@ -20,8 +24,8 @@
             </li>
           </ul> -->
 
+          
 
-    
 
           <h1>Find hotels from all over the world</h1>
     <!-- <div class="form-wrapper cf">
@@ -70,10 +74,10 @@
                                 {{hotels.views}}
                             </span> -->
                         <ul class='main_facilities'>
-                            <li><img class='icon' ng-src="{{hotels.facilities[0].imgURL}}">{{hotels.facilities[0].fName}}</li>
-                            <li><img class='icon' ng-src="{{hotels.facilities[1].imgURL}}">{{hotels.facilities[1].fName}}</li>
-                            <li><img class='icon' ng-src="{{hotels.facilities[2].imgURL}}">{{hotels.facilities[2].fName}}</li>
-                            <li><img class='icon' ng-src="{{hotels.facilities[4].imgURL}}">{{hotels.facilities[4].fName}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[0].imgURL}}">{{hotels.facilities[0].name}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[1].imgURL}}">{{hotels.facilities[1].name}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[2].imgURL}}">{{hotels.facilities[2].name}}</li>
+                            <li><img class='icon' ng-src="{{hotels.facilities[4].imgURL}}">{{hotels.facilities[4].name}}</li>
                         </ul>
                         <!-- <div ng-show="hotels.facilities[0].wifi">
                             <img  ng-src="{{hotels.facilities[0].imgURL}}">
@@ -85,11 +89,13 @@
                         </div>
                         <div class='description'>
                             <h3>{{hotels.town}}, {{hotels.country}}</h3>
-                            <p>{{hotels.description}}</p>
+                            <p>{{hotels.shortDescription}}</p>
+                            <p>{{hotels.views}}</p>
+                            <p>{{hotels.oneBedPrice}}$ for bed</p>
                         </div>
                                 <div class="buttons" role="group" aria-label="...">
-                                        <button class="pure-button"><a href="#!/viewdetails/{{hotels._id}}">View</a></button>
-                                        <button class="pure-button">Favorite</button>
+                                        <button class="pure-button" ng-click='setView(hotels._id)'><a href="#!/viewdetails/{{hotels._id}}">View</a></button>
+                                        <button class="pure-button" ng-click="addToFav()">Favorite</button>
                                 </div>
                         </div>
                     </div>
