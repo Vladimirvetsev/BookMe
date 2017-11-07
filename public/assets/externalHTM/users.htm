@@ -1,6 +1,6 @@
-<!-- <section id="usersProfile" ng-controller="usersController"> -->
+<section id="usersProfile" ng-controller="hotelsController">
 <div class="row" style="padding-top:100px">
-    <div class="col-lg-4">
+    <div class="col-md-4">
         <aside class="navbar navbar-default sidebar" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -24,10 +24,10 @@
                                 <span style="font-size:16px;float:right" class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span>
                             </a>
                             <ul class="dropdown-menu forAnimate" role="menu">
-                                    <li><a id="userBookings" href="">Your Bookings</a></li>
-                                    <li><a id="userVisited" href="">Hotels You Visited</a></li>
-                                    <li><a id="userFavorites" href="">Favorite Hotels</a></li>
-                                    <li><a id="userHotels" href="">Your Hotels</a></li>
+                                    <li><a href="" ng-click="userBookings()">Your Bookings</a></li>
+                                    <li><a href="" ng-click="userVisited()">Hotels You Visited</a></li>
+                                    <li><a href="" ng-click="userFavorites()">Favorite Hotels</a></li>
+                                    <li><a href="" ng-click="userHotels()">Your Hotels</a></li>
                                   </ul>
                         </li>
                         
@@ -36,7 +36,7 @@
             </div>
         </aside>
     </div>
-    <div class="col-lg-8">
+    <div class="col-md-8">
         <h3>Your BookMe account</h3>
         <hr>
             <form>
@@ -58,12 +58,12 @@
                                       </div>
                 
                                       <div class="form-group">
-                                            <button id="changeButton" type="submit" class="btn btn-block">Save changes</button>
+                                            <button ng-click="" id="changeButton" type="submit" class="btn btn-block">Save changes</button>
                                           </div>
             </form>
         </div>
 </div>
 
 
-<!-- </section> -->
-<!-- <script src="assets/controlers/usersController.js"></script> -->
+</section>
+<script src="assets/controlers/hotelsController.js"></script>

@@ -107,12 +107,12 @@ body,html{
 
   aside.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, aside.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
     color: #CCC;
-    /* background-color: transparent; */
+    background-color: transparent;
   }
 
-  /* aside:hover .forAnimate{
+  aside:hover .forAnimate{
     opacity: 1;
-  } */
+  }
   section{
     padding-left: 15px;
   }
