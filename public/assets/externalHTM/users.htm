@@ -1,4 +1,5 @@
 <section id="usersProfile" ng-controller="hotelsController">
+    <div class="container">
     <div class="row" style="padding-top:100px">
         <div class="col-md-4">
             <aside class="navbar navbar-default sidebar" role="navigation">
@@ -77,6 +78,47 @@
             </form>
         </div>
     </div>
+</div>
+    <div class="content-fluid">
+            
+                        <article class='one_hotel' ng-repeat="hotels in myhotels" ng-show='myhotels.length > 0'>
+                            <div class='one_add'>
+                                <div class='left_container'>
+                                    <img class='hotel_main_image' ng-src="{{hotels.Photos[0]}}" />
+                                    <!-- <span>
+                                            {{hotels.likes}}
+                                        </span> -->
+                                    <!-- <span>
+                                            {{hotels.views}}
+                                        </span> -->
+                                    <ul class='main_facilities'>
+                                        <li><img class='icon' ng-src="{{hotels.facilities[0].imgURL}}">{{hotels.facilities[0].name}}</li>
+                                        <li><img class='icon' ng-src="{{hotels.facilities[1].imgURL}}">{{hotels.facilities[1].name}}</li>
+                                        <li><img class='icon' ng-src="{{hotels.facilities[2].imgURL}}">{{hotels.facilities[2].name}}</li>
+                                        <li><img class='icon' ng-src="{{hotels.facilities[4].imgURL}}">{{hotels.facilities[4].name}}</li>
+                                    </ul>
+                                    <!-- <div ng-show="hotels.facilities[0].wifi">
+                                        <img  ng-src="{{hotels.facilities[0].imgURL}}">
+                                         </div> -->
+                                </div>
+                                <div class='right_container'>
+                                    <div class='hot_header'>
+                                        <h2>{{hotels.name}}</h2>
+                                    </div>
+                                    <div class='description'>
+                                        <h3>{{hotels.town}}, {{hotels.country}}</h3>
+                                        <p>{{hotels.shortDescription}}</p>
+                                        <p>{{hotels.views}}</p>
+                                        <p>{{hotels.oneBedPrice}}$ for bed</p>
+                                    </div>
+                                            <div class="buttons" role="group" aria-label="...">
+                                                    <button class="pure-button" ng-click='setView(hotels._id)'><a href="#!/viewdetails/{{hotels._id}}">View</a></button>
+                                                    <button class="pure-button" ng-click="addToFav()">Favorite</button>
+                                            </div>
+                                    </div>
+                                </div>
+                        </article>
+                        </div>
 
 
 </section>
