@@ -7,8 +7,6 @@ app.controller('hotelsController', ['$scope', 'hotelsService',
             $scope.changeLName = user.lastName
             $scope.changeEmail = user.email
             $scope.changePassword = user.password
-
-            console.log(user)
             $scope.userBookings = function () {
                 $scope.myhotels = user.arrayBookings
                 console.log(user.arrayBookings)

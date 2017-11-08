@@ -63,8 +63,13 @@ header {
     }
 }
 #regButton {
-    height: 34px !important
+    height: 34px !important;
+    display: block !important;
 }
 #loginButton {
-    height: 34px !important
+    height: 34px !important;
+    display: block !important;
+}
+.ui-effects-wrapper {
+    display:inline;
 }

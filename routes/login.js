@@ -6,8 +6,12 @@ router.post('/', function (req, res, next) {
   var userCollection = req.db.get('users');
   var user = req.body
   userCollection.find(user, function (err, docs) {
+    if (docs != null && docs.length > 0) {
     req.session.userId = docs[0]._id;
     res.json(docs)
+    } else {
+      res.json({error: "Invalid user"})
+    }
   });
 });
 

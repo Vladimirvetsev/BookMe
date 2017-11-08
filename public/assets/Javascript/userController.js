@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var userPassword = document.getElementById("loginPassword").value;
         if ((userEmail.length > 0) && (userPassword.length > 0) && (userEmail.indexOf("@") != -1) && (userEmail.indexOf("@") != 0) && (userEmail.indexOf("@") != userEmail.length)) {
             login({ email: userEmail, password: userPassword }).then(function (user) {
-                if (user.length > 0) {
+                if (user.error == null) {
                     document.getElementById("userDropdown").style.display = "block"
                     document.getElementById("login").style.display = "none"
                     document.querySelector("#userDropdown >a").textContent = user[0].firstName + " " + user[0].lastName
