@@ -10,15 +10,19 @@ app.controller('hotelsController', ['$scope', 'hotelsService',
 
             console.log(user)
             $scope.userBookings = function () {
+                $scope.myhotels = user.arrayBookings
                 console.log(user.arrayBookings)
             }
             $scope.userVisited = function () {
+                $scope.myhotels = user.arrayVisitedHotels
                 console.log(user.arrayVisitedHotels)
             }
             $scope.userFavorites = function () {
+                $scope.myhotels = user.arrayFavoriteHotels
                 console.log(user.arrayFavoriteHotels)
             }
             $scope.userHotels = function () {
+                $scope.myhotels = user.arrayOwnHotels
                 console.log(user.arrayOwnHotels)
             }
         });

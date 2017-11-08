@@ -83,6 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#login-dp").toggle()
     })
 
+    document.getElementById("userDropdown").addEventListener("click", function (event) {
+        event.preventDefault()
+        $("#user-dp").toggle()
+    })
+
+    document.getElementById("gotoUser").addEventListener("click", function (event) {
+        window.location.href = "http://localhost:3000/#!/user"
+    })
+
     document.getElementById("logout").addEventListener("click", function () {
         FB.getLoginStatus(function (response) {
             if (response.status === 'connected') {

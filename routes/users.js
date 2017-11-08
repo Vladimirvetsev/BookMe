@@ -33,4 +33,13 @@ router.put('/', function (req, res, next) {
   }
 });
 
+
+router.put('/hotels', function (req, res, next) {
+  var db = req.db;
+  var hotelsCollection = db.get('hotels');
+  hotelsCollections.update({_id:req.session.userId}, {$push: {arrayFavoriteHotels: req.body}}, function (err, docs) {
+    res.json(docs);
+  });
+});
+
 module.exports = router;
