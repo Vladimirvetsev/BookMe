@@ -5,14 +5,25 @@ app.controller('mainPageController', function ($scope, $http,$filter, $log) {
         url: "hotels"
     }).then(function mySuccess(response) {
         $scope.myhotels = response.data;
-        $scope.setView=function(id){
+        $scope.addToFav=function(id){
             // console.log(id);
+            event.preventDefault();
             $scope.hotel = $filter('filter')($scope.myhotels, { _id: id })
-            var view=$scope.hotel[0].views;
-            view+=view;
+            var ob=$scope.hotel[0];
             // $log.log($scope.hotel[0])  
-            $http.put('http://localhost:3000/hotels/'+id,  view).then(function(res){
-                $log.log($scope.hotel[0].views)
+            $log.log(ob);
+            $http.put('http://localhost:3000/users/favorites',  ob).then(function(res){
+            })
+        }
+        $scope.like=function(id){
+            // console.log(id);
+            event.preventDefault();
+            $scope.hotel = $filter('filter')($scope.myhotels, { _id: id })
+            var likes=$scope.hotel[0].likes;
+            likes+=likes;
+            // $log.log($scope.hotel[0])  
+            $log.log(ob);
+            $http.put('http://localhost:3000/hotels',  ob).then(function(res){
             })
         }
         // console.log('sfkoajfpjawofpjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj');

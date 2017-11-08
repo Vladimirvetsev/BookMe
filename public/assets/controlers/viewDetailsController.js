@@ -92,6 +92,16 @@ app.controller('viewDetailsController', function ($scope, $http, $filter, $log, 
                     // console.log($scope.hotelData);
                 })
             }
+            $scope.makeRes=function(hotel){
+                // console.log(id);
+                event.preventDefault();
+                $scope.hotel = $filter('filter')($scope.myhotels, { _id: hotel })
+                var ob=$scope.hotel[0];
+                // $log.log($scope.hotel[0])  
+                $log.log(ob);
+                $http.put('http://localhost:3000/users/bookings',  dates).then(function(res){
+                })
+            }
             // $log.log($scope.oneHotel)
 
         }

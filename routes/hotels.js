@@ -35,16 +35,16 @@ router.put('/:id',function(req,res,next){
             res.json(r);
         })
 })
-router.put('/:id',function(req,res,next){
+router.put('/',function(req,res,next){
     var hotelcollections = req.db.get('hotels')
-    var id = req.param.id;
+    var id = req.body.id;
     console.log(id);
     // console.log(req);
     console.log(req.body);
     var hotels=req.body;
     hotelcollections.update(
         {_id:id},
-        {$push: {views:hotels}},function(e,r){
+        {$push: {likes:hotels}},function(e,r){
             res.json(r);
         })
 })

@@ -43,12 +43,19 @@
 
             <div class='right'>
                 <h3>Make reservation!</h3> 
-                    <input type="date" name="firstDay" ng-model='example1.value'>
+                    <span style="padding-right:200px">From Date:</span><br>
+                    <input type="date" name="firstDay" ng-model='example1.value'><br>
+                    <span style="padding-right:200px">To Date:</span><br>
                     <input type="date" name="secondDate" ng-model='example2.value'><br>
-                    <input type="text" name="beds" ng-model='hotel.wantedBeds'>
-                    How many beds you would like?
-                    <button ng-click="setDates($event)">Reserve</button>
+                    <span style="padding-right:200px">How many beds you would like?</span><br>
+                    <input type="text" name="beds" ng-model='hotel.wantedBeds'><br>
+
+                    <button ng-click="setDates($event)">Save Dates</button><br>
                     <p>That will be for everything: {{hotel.offer}}</p>
+                    <form action="">
+                        <button ng-click="makeRes(id)">Submit Reservation</button>
+                    </form>
+
                     <!-- <p>It will be: {{hotel.stars}}</p> -->
                     <br>
                     <br>
