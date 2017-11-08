@@ -44,12 +44,13 @@
   <script src="assets/controlers/registerController.js"></script>
   <script src="assets/controlers/viewDetailsController.js"></script>
   <script src="assets/controlers/hotelsController.js"></script>
+  <script src="assets/controlers/indexController.js"></script>
   <!-- <script src="assets/Javascript/viewtry.js"></script> -->
   <script src="assets/Javascript/userController.js"></script>
   <script src="assets/Javascript/hotelsService.js"></script>
   <script src="assets/Javascript/carousel.js"></script>
   <script src="assets/controlers/stepController.js"></script>
-
+  <script src="assets/Javascript/indexService.js"></script>
   <script src="assets/Javascript/userService.js"></script>
 
 
@@ -230,7 +231,7 @@
 
 
   <footer>
-    <div class="container footer">
+    <div class="container footer" ng-controller="indexController">
       <div class="row">
         <div class="col-lg-12">
           <div class="col-lg-3 col-md-6">
@@ -238,12 +239,12 @@
               <div class="col-lg-3">
                 <div class="footer_intro_hover " style="background-color:#cccccc;">
                   <p style="text-align:center; margin-top:20px;">
-                    <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                    <img src="{{myhotels[5].Photos[0]}}" class="img-responsive" alt="" style="width:500px">
                   </p>
                   <div class="caption">
                     <div class="blur"></div>
                     <div class="caption-text">
-                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Hotel 1</h3>
+                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">{{myhotels[5].name}}</h3>
                       <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
                       <a class=" btn btn-default" href="#">
                         <span class="glyphicon glyphicon-plus"> INFO</span>
@@ -255,12 +256,12 @@
               <div class="col-lg-3">
                 <div class="footer_intro_hover " style="background-color:#cccccc;">
                   <p style="text-align:center; margin-top:20px;">
-                    <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                    <img src="{{myhotels[16].Photos[2]}}" class="img-responsive" alt="" style="width:500px">
                   </p>
                   <div class="caption">
                     <div class="blur"></div>
                     <div class="caption-text">
-                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">Hotel 2</h3>
+                      <h3 style="border-top:2px solid white; border-bottom:2px solid white; padding:10px;">{{myhotels[15].name}}</h3>
                       <p>Loren ipsum dolor si amet ipsum dolor si amet ipsum dolor...</p>
                       <a class=" btn btn-default" href="#">
                         <span class="glyphicon glyphicon-plus"> INFO</span>
@@ -272,11 +273,11 @@
               <div class="col-lg-3 col-md-6">
                 <h3>Hotels</h3>
                 <ul>
-                  <li>
-                    <a href="">
-                       hotel 1</a>
+                  <li ng-repeat="hotel in myhotels | limitTo:7">
+                    <a href="#!/viewdetails/{{hotel._id}}">
+                       {{hotel.name}}</a>
                   </li>
-                  <li>
+                  <!-- <li>
                     <a href="">
                        hotel 2</a>
                   </li>
@@ -299,7 +300,7 @@
                   <li>
                     <a href="">
                         hotel 7</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="col-lg-3 col-md-6">
