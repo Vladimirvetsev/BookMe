@@ -36,8 +36,19 @@ router.put('/', function (req, res, next) {
 
 router.put('/favorites', function (req, res, next) {
   var db = req.db;
-  var hotelsCollection = db.get('hotels');
-  hotelsCollections.update({_id:req.session.userId}, {$push: {arrayFavoriteHotels: req.body}}, function (err, docs) {
+  // var hotelsCollection = db.get('hotels');
+  var usersCollection = db.get('users');
+  
+  usersCollection.update({_id:req.session.userId}, {$push: {arrayFavoriteHotels: req.body}}, function (err, docs) {
+    res.json(docs);
+  });
+});
+router.put('/bookings', function (req, res, next) {
+  var db = req.db;
+  // var hotelsCollection = db.get('hotels');
+  var usersCollection = db.get('users');
+  
+  usersCollection.update({_id:req.session.userId}, {$push: {arrayBookings: req.body}}, function (err, docs) {
     res.json(docs);
   });
 });

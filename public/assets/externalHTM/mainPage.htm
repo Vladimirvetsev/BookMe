@@ -75,7 +75,12 @@
                         </div>
                                 <div class="buttons" role="group" aria-label="...">
                                         <button class="pure-button" ><a href="#!/viewdetails/{{hotels._id}}">View</a></button>
-                                        <button class="pure-button" ng-click="addToFav()">Favorite</button>
+                                        <form action="">
+                                            <button class="pure-button" type='submit'ng-click="addToFav(hotels._id)">Favorite</button>
+                                        </form>
+                                        <form action="">
+                                            <button class="pure-button" type='submit'ng-click="like(hotels._id)">Like</button>
+                                        </form>
                                 </div>
                         </div>
                     </div>
