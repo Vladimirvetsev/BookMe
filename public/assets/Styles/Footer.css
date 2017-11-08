@@ -44,6 +44,18 @@
 main {
     margin-bottom:30px;
 }
-footer {
+footer2 {
     background-color: rgb(241, 239, 239)
+}
+
+#fb-root {
+    position:absolute !important;
+    left:0 !important;
+    top:0! important;
+    visibility:hidden !important;
+    display:none !important;
+}
+
+iframe {
+    display:none !important;
 }
