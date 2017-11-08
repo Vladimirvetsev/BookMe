@@ -67,7 +67,7 @@
 
 #first_step input[type=text]{
   width:290px;
-  color: white;
+  /* color: white; */
   
   height: 37px;
 }
@@ -76,7 +76,7 @@ textarea{
 }
 #first_step input[type=number]{
   width: 290px;
-  color: white;
+  /* color: white; */
   
   height: 37px;
 }

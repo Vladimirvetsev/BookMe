@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function error(ID) {
         var originalColor = $(ID).css("background-color")
-        $(ID).effect("shake")
+        // $(ID).effect("shake")
         $(ID).css("background-color", "#DB1818")
         setTimeout(function () {
             $(ID).css("background-color", originalColor)

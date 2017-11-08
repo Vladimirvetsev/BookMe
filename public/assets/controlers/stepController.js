@@ -4,7 +4,7 @@ app.controller('stepController', function($scope, $http, uploadFile, $timeout) {
   $scope.message = false;
   $scope.alert = '';
   $scope.default = 'https://thebenclark.files.wordpress.com/2014/03/facebook-default-no-profile-pic.jpg';
-
+    var storedDates = []
   $scope.Submit = function() {
       $scope.uploading = true;
       uploadFile.upload($scope.file).then(function(data) {
