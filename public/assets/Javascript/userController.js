@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#user-dp").toggle()
     })
 
-    document.getElementById("gotoUser").addEventListener("click", function (event) {
+    document.getElementById("gotoUser").addEventListener("click", function () {
         window.location.href = "http://localhost:3000/#!/user"
     })
 
