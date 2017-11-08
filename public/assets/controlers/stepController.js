@@ -88,7 +88,7 @@ app.controller('stepController', function($scope, $http, uploadFile, $timeout) {
     ];
     console.log($scope.hotelData)
     var img=$scope.file.originalname
-    $scope.hotelData = {facilities,Photos,img};
+    $scope.hotelData = {facilities,Photos,img,storedDates};
     $http.get("http://localhost:3000/hotels").then(function (result) {
       $scope.myHotels = result.data;
       

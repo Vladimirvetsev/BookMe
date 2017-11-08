@@ -29,8 +29,9 @@ app.controller('viewDetailsController', function ($scope, $http, $filter, $log, 
     $scope.thishotel = hotel;
     // console.log($scope.thishotel)
     $scope.loading = true;
-
-
+    
+    // $scope getStars= function(id){
+    // }
     $http({
         method: "GET",
         url: 'hotels'

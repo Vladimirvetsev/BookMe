@@ -7,8 +7,8 @@ body{
     width: 100%;
 }
 #main_page_content{
-    overflow: auto;
-    position: relative;
+    /* overflow: auto; */
+    /* position: relative; */
     margin-left: auto;
     margin-right: auto;
     margin-top: -300px;
@@ -207,12 +207,12 @@ body{
    
 }  */
 
-/* #main_page_content>h1{
-    font-size:3em;
+#main_page_content>h1{
+    /* font-size:3em; */
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
-    color: rgb(48,60,71);
+    /* color: rgb(48,60,71); */
     text-align: center;
-} */
+}
 /* .one_hotel{
     padding-left: 15px;
     padding-right: 15px;

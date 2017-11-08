@@ -1,3 +1,5 @@
+<section class='parallax'>
+
 <section id='step_counter' style='padding:100px;'>
     <div class="container">
         <h1>Let's get started!</h1>
@@ -149,8 +151,22 @@
         <div class='hotel_input'>
             <input type="text" ng-model="hotelData.postCode">
         </div>
+        <div class="hotel_type">
+                <span>Short description</span>
+            </div class="hotel_type">
 
-        <div class='step_heading'>
+        <div class='hotel_input'>
+                <textarea rows="4" cols="500"  ng-model="hotelData.shortDescription">
+                        Enter short description of your hotels.
+                </textarea>
+        </div>
+        <div class='hotel_input' >
+                <textarea rows="4" cols="30" ng-model="hotelData.description">
+                        Enter full description of your hotels.
+                </textarea>
+        </div>
+
+        <div class='step_heading' >
             <h2>You're almost there! Let's see your property facilities</h2>
         </div>
 
@@ -295,3 +311,4 @@
         <input type="text"> -->
 </section>
 <script src="assets/controlers/stepController.js"></script>
+</section>

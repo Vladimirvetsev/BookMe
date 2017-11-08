@@ -41,38 +41,61 @@
                     <div class="mySlides fade">
                         <img ng-src="{{hotel.Photos[0]}}" />
                     </div>
+                    
+                </div>
+               
+             
+            </div> 
+
+            <div class='right'>
+                <h3>Make reservation!</h3> 
                     <input type="date" name="firstDay" ng-model='example1.value'>
                     <input type="date" name="secondDate" ng-model='example2.value'><br>
-                    <h3>Make reservation!</h3> 
                     <input type="text" name="beds" ng-model='hotel.wantedBeds'>
+                    How many beds you would like?
                     <button ng-click="setDates($event)">Reserve</button>
-                    <p>It will be: {{hotel.offer}}</p>
-                </div>
-                
-                <div class='facilities'>
+                    <p>That will be for everything: {{hotel.offer}}</p>
+                    <!-- <p>It will be: {{hotel.stars}}</p> -->
+                    <br>
+                    <br>
+                    
+
+                    <ul>
+                        <li ng-repeat="star in getStars(hotel.stars) track by $index"><img style='width:50px; vertical-align:middle;' ng-src="assets/Images/Images-Icon/star.png"/>{{hotel.stars}}</li>
+                    </ul>
+                    <h2>{{hotel.name}}</h2>
+                    <span>
+                            {{hotel.town}}, {{hotel.country}}.
+                    </span><br>
+                    <span>
+                            {{hotel.address}}
+                    </span>
+                    
+                    <br> 
+                    <span>
+                       The hotel has {{hotel.roomsCount}} rooms with {{hotel.bedroomsCount}} bedrooms and {{hotel.bathroomsCount}}
+                    </span>
+                    <span>
+                        Max guest - {{hotel.maxGuests}}
+                        </span><br>
+                        <span>
+                               You'll have {{hotel.possetions}}
+                        </span><br>
+                    <hr>
+                    
+            </div>
+            <div>
+                    <p>{{hotel.description}}</p>
+                   </div>
+
+            <div class='facilities'>
+                    
                     <h3>Hotel Facilities</h3>
                     <hr>
                     <ul>
                         <li ng-repeat="facilitie in hotel.facilities" ng-show='facilitie.has'><img class='icon' ng-src="{{facilitie.imgURL}}">{{facilitie.name}}</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class='right'>
-                    <h2>{{hotel.name}}</h2>
-                    <hr>
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, tenetur? Exercitationem odit pariatur
-                            recusandae minima magni ipsum voluptate beatae asperiores iusto praesentium perferendis fugit consequuntur
-                            cupiditate repellat sit, error iste?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, tenetur? Exercitationem odit pariatur
-                            recusandae minima magni ipsum voluptate beatae asperiores iusto praesentium perferendis fugit consequuntur
-                            cupiditate repellat sit, error iste?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, tenetur? Exercitationem odit pariatur
-                            recusandae minima magni ipsum voluptate beatae asperiores iusto praesentium perferendis fugit consequuntur
-                            cupiditate repellat sit, error iste?</p>
-                        <p>{{hotel.storedDates}}</p>
-            </div>
             <script>
                     var slideIndex = 0;
                     showSlides();
